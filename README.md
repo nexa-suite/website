@@ -6,190 +6,125 @@
 
 <br/><br/>
 
-# nexa-website
+# Nexa Website
 
-**Public landing website and central product entry point for the Nexa B2B cold-chain platform**
+**Public static website and product entry point for the Nexa B2B cold-chain platform.**
 
-<br/>
+![HTML5](https://img.shields.io/badge/HTML5-semantic-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Latest published release](https://img.shields.io/badge/latest%20published-v1.0.0-2563EB?style=for-the-badge)
 
-![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-Responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-2a67d9?style=for-the-badge)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-22c55e?style=for-the-badge&logo=github&logoColor=white)
+[Changelog](./CHANGELOG.md) · [Release notes](./docs/releases/) · [Contributing](./.github/CONTRIBUTING.md) · [Security](./.github/SECURITY.md)
 
-<br/>
+**Current repository:** Website · **Current release:** `v1.0.0`
 
-![Course](https://img.shields.io/badge/Course-1ASI0730%20Aplicaciones%20Web-0a2540?style=flat-square)
-![Cycle](https://img.shields.io/badge/Cycle-2026--10-0a2540?style=flat-square)
-![University](https://img.shields.io/badge/University-UPC-0a2540?style=flat-square)
-![Team](https://img.shields.io/badge/Team-King-2a67d9?style=flat-square)
-![Delivery](https://img.shields.io/badge/Delivery-TB2-0a2540?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Release%20v4.0.1-22c55e?style=flat-square)
-
-<br/>
-
-**[Start Website Flow](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/)** ·
-**[Open Live WebApp](https://nexa-webapp.onrender.com/#/auth/login)**
-
-<br/>
+[API](https://github.com/nexa-suite/api) · [Platform](https://github.com/nexa-suite/platform) · [Portal](https://github.com/nexa-suite/portal) · [Mobile](https://github.com/nexa-suite/mobile)
 
 </div>
 
 ---
 
-## Project Entry Flow
+## Scope and evidence
 
-Start the Nexa review from the public Website and continue through the operational products:
+This repository contains the functional public site: static HTML pages, CSS design layers, vanilla JavaScript interactions and ES/EN content. `v1.0.0` preserves that source and adds only repository governance, release documentation and a suite map.
 
-1. **Website:** https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/
-2. **WebApp:** https://nexa-webapp.onrender.com/#/auth/login
-3. **Platform API:** https://nexa-platform-20wt.onrender.com
-4. **Swagger UI:** https://nexa-platform-20wt.onrender.com/swagger/index.html
-5. **Report Repository:** https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report
+The website does not implement a backend, database, AI, IoT, mobile client or external cloud integration. Links carrying `data-webapp-path` are navigation targets in the public copy and are not runtime proof of an available WebApp service.
 
----
+## Product boundaries
 
-## Overview
+```mermaid
+flowchart LR
+    Website["Website<br/>Static HTML/CSS/JS<br/>v1.0.0"]
+    Platform["Platform<br/>Angular shell<br/>v0.3.0"]
+    Portal["Buyer Portal<br/>Angular shell<br/>v0.3.0"]
+    API["API<br/>Catalog query contract<br/>v0.4.0"]
 
-The `nexa-website` repository hosts the public website for Nexa. It presents the product value proposition for food importers, distributors, cold-storage operators, and B2B buyers that need clearer order intake, inventory visibility, dispatch coordination, and tracking.
+    Website -. "public product navigation" .-> Platform
+    Website -. "public product navigation" .-> Portal
+    Platform -. "future approved HTTP contract" .-> API
+    Portal -. "future approved HTTP contract" .-> API
+```
 
-This repository is part of the **TB2 delivery** and is currently published as **v4.0.1**.
+The dotted links describe product boundaries and future approved contracts, not deployed integration. Mobile is not implemented and is intentionally absent from the runtime map. PostgreSQL, AI, IoT and cloud services are not implemented in this website release.
 
----
+![Nexa Suite repository map](./docs/assets/repository-map/nexa-suite-map.svg)
 
-## Repository Map
+## Repository map
 
-<table>
-  <tr>
-    <td width="50%">
-      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website">nexa-website</a> (This Repository)</p>
-      <p>Public landing website and central product entry point.</p>
-      <p><a href="https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/">Open Live Website</a></p>
-      <p>
-        <img alt="Version" src="https://img.shields.io/badge/v4.0.1-TB2-22c55e?style=flat-square" />
-        <img alt="HTML5" src="https://img.shields.io/badge/HTML5-static-E34F26?style=flat-square&logo=html5&logoColor=white" />
-        <img alt="CSS3" src="https://img.shields.io/badge/CSS3-responsive-1572B6?style=flat-square&logo=css3&logoColor=white" />
-        <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-      </p>
-    </td>
-    <td width="50%">
-      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp">nexa-webapp</a></p>
-      <p>Main Vue web application for Buyer, Sales, Logistics, and Company Owner workflows.</p>
-      <p><a href="https://nexa-webapp.onrender.com/#/auth/login">Open Live WebApp</a></p>
-      <p>
-        <img alt="Version" src="https://img.shields.io/badge/v3.0.1-TB2-22c55e?style=flat-square" />
-        <img alt="Vue 3" src="https://img.shields.io/badge/Vue%203-35495E?style=flat-square&logo=vue.js&logoColor=4FC08D" />
-        <img alt="Vite" src="https://img.shields.io/badge/Vite-0F172A?style=flat-square&logo=vite&logoColor=FFD62E" />
-        <img alt="PrimeVue" src="https://img.shields.io/badge/PrimeVue-0EA5E9?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform">nexa-platform</a></p>
-      <p>Backend platform and API service layer for domain, persistence, security, and deployment concerns.</p>
-      <p><a href="https://nexa-platform-20wt.onrender.com/swagger/index.html">Open Swagger UI</a></p>
-      <p>
-        <img alt="Version" src="https://img.shields.io/badge/v2.0.0-TB2-22c55e?style=flat-square" />
-        <img alt="Platform" src="https://img.shields.io/badge/Platform-backend%20workspace-512BD4?style=flat-square" />
-        <img alt="API" src="https://img.shields.io/badge/API-domain%20services-0EA5E9?style=flat-square" />
-        <img alt="EF Core" src="https://img.shields.io/badge/EF%20Core-PostgreSQL-512BD4?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%">
-      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report">nexa-ecosystem-report</a></p>
-      <p>Academic report, product backlog, architecture documentation, validation, and evidence logs.</p>
-      <p><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-ecosystem-report">Open Report Repository</a></p>
-      <p>
-        <img alt="Delivery" src="https://img.shields.io/badge/TB2-report%20scope-0a2540?style=flat-square" />
-        <img alt="Documentation" src="https://img.shields.io/badge/Documentation-report-0F172A?style=flat-square" />
-        <img alt="UPC" src="https://img.shields.io/badge/UPC-course%20evidence-0EA5E9?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-</table>
+| Repository | Current release | Responsibility | Evidence status |
+|---|---:|---|---|
+| **Website** | **`v1.0.0`** | Public product discovery | Functional static site |
+| [Platform](https://github.com/nexa-suite/platform) | `v0.3.0` | Internal operations shell | Angular shell |
+| [Portal](https://github.com/nexa-suite/portal) | `v0.3.0` | Buyer self-service shell | Angular shell |
+| [API](https://github.com/nexa-suite/api) | `v0.4.0` | Business and integration authority | Catalog query contract |
+| [Mobile](https://github.com/nexa-suite/mobile) | `v0.1.1` | Future native clients | Documentation-only |
 
----
+## Pages
 
-## Live Services
-
-| Component | Current Version | URL |
-|---|---:|---|
-| Website | `v4.0.1` | https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/ |
-| WebApp | `v3.0.1` | https://nexa-webapp.onrender.com/#/auth/login |
-| Platform API | `v2.0.0` | https://nexa-platform-20wt.onrender.com |
-| Swagger UI | `v2.0.0` | https://nexa-platform-20wt.onrender.com/swagger/index.html |
-
----
-
-## Website Pages
-
-| Route | Purpose |
+| Path | Purpose |
 |---|---|
-| `/` | Product overview, segments, workflow, and calls to action. |
-| `/pages/platform.html` | Platform capabilities and module explanation. |
-| `/pages/about-the-product.html` | Product context and workflow detail. |
-| `/pages/pricing.html` | Plan information and commercial contact flow. |
-| `/pages/company.html` | Team, mission, and contact information. |
-| `/pages/faq.html` | Frequently asked product questions. |
-| `/pages/solutions/importers.html` | Segment page for importers. |
-| `/pages/solutions/distributors.html` | Segment page for distributors. |
-| `/pages/solutions/cold-storage.html` | Segment page for cold-storage operators. |
-| `/pages/legal/*.html` | Terms, privacy, and cookies. |
+| [`index.html`](./index.html) | Product overview and calls to action |
+| [`pages/platform.html`](./pages/platform.html) | Platform capabilities and operational context |
+| [`pages/buyer-portal.html`](./pages/buyer-portal.html) | Buyer-facing product context |
+| [`pages/about-the-product.html`](./pages/about-the-product.html) | Product and workflow detail |
+| [`pages/about-the-team.html`](./pages/about-the-team.html) | Team information |
+| [`pages/company.html`](./pages/company.html) | Company and contact information |
+| [`pages/pricing.html`](./pages/pricing.html) | Pricing presentation and contact flow |
+| [`pages/faq.html`](./pages/faq.html) | Frequently asked questions |
+| [`pages/solutions/`](./pages/solutions/) | Importer, distributor and cold-storage pages |
+| [`pages/legal/`](./pages/legal/) | Terms, privacy and cookies |
 
----
-
-## Tech Stack
+## Tech stack
 
 | Layer | Technology |
 |---|---|
-| **Markup** | HTML5 |
-| **Styling** | CSS3 with design tokens and responsive layout |
-| **Interactivity** | Vanilla JavaScript |
-| **Internationalization** | ES / EN custom i18n |
-| **Deployment** | GitHub Pages |
+| Markup | HTML5 |
+| Styling | CSS3 with tokens and responsive layout |
+| Interactivity | Vanilla JavaScript |
+| Internationalization | Custom ES/EN dictionaries |
+| Local hosting | Python static server, Docker/nginx or the declared static host configuration |
 
----
+No package manager or dependency installation is required for the website.
 
-## Getting Started
-
-The website does not require package installation.
+## Getting started
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Local Website: `http://localhost:8000`
+Open [http://localhost:8000](http://localhost:8000). The site can also be served by the existing [Dockerfile](./Dockerfile); `render.yaml` describes static hosting configuration but is not deployment evidence.
 
----
+## Validation
 
-## Project Structure
-
-```text
-nexa-website/
-├── index.html
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── img/
-├── pages/
-│   ├── legal/
-│   └── solutions/
-└── .github/
+```bash
+node --check assets/js/i18n.js
+node --check assets/js/interactions.js
+node --check assets/js/animations.js
+node --check assets/js/pricing.js
 ```
 
----
+For visual work, serve the site locally and inspect desktop and mobile layouts in a browser. This documentation update does not rework functional HTML, CSS or JavaScript.
+
+## Project structure
+
+```text
+assets/css/                           # Design tokens and page styles
+assets/img/                           # Local logos, illustrations and product imagery
+assets/js/                            # i18n, interactions, animations and pricing behavior
+pages/                                # Product, solution and legal pages
+docs/assets/repository-map/           # Local architecture map
+docs/releases/                        # Product and documentation release notes
+.github/                              # Community guidance and validation workflows
+```
 
 ## Documentation
 
-- [Code of Conduct](.github/CODE_OF_CONDUCT.md)
-- [Contributing Guidelines](.github/CONTRIBUTING.md)
-- [Security Policy](.github/SECURITY.md)
-- [Latest Release](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website/releases/tag/v4.0.1)
+- [Release notes v1.0.0](./docs/releases/v1.0.0.md)
+- [Release notes index](./docs/releases/)
+- [Changelog](./CHANGELOG.md)
+- [Release policy](./.github/RELEASE_POLICY.md)
 
----
+## Claim boundary
 
-<p align="center">
-  <strong>Nexa Website</strong> · Universidad Peruana de Ciencias Aplicadas · Team King · TB2 · 2026-10
-</p>
+Marketing content may describe future Nexa capabilities, but only content explicitly marked as available is treated as current evidence. No page in this repository proves API integration, persistence, tenant authorization, GPS, IoT telemetry, payment processing, AI or mobile execution.

@@ -1,67 +1,48 @@
 # Contributing to Nexa Website
 
-## Repository Context
+## Repository context
 
-`nexa-website` is the public product website for the Nexa TB2 delivery.
+This repository is the static public Website for Nexa Suite.
 
 | Field | Value |
 |---|---|
-| Current release | `v4.0.1` |
-| Delivery | TB2 |
+| Latest published product release | `v0.1.0` |
+| Documentation edition | `v1.0.0` |
+| Local Git state | HEAD is untagged |
 | Runtime | Static HTML / CSS / JavaScript |
-| Deployment | GitHub Pages |
-| Live Website | https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/ |
-| WebApp | https://nexa-webapp.onrender.com/#/auth/login |
+| Dependencies | None required for local serving |
+| Deployment configuration | `render.yaml` only; deployment is not asserted here |
 
 ## Workflow
 
-1. Create a branch from `develop` unless the maintainer requests a release correction from `main`.
-2. Keep changes scoped to one page, one content area, or one documentation concern.
-3. Use conventional commits.
-4. Validate locally before opening a pull request.
-5. Do not commit temporary files, local screenshots, OS metadata, or unrelated generated artifacts.
+1. Create a branch from `develop`.
+2. Keep changes scoped to a page, content area or documentation concern.
+3. Preserve the existing static HTML/CSS/JavaScript structure.
+4. Use conventional commits and do not add temporary files, screenshots, OS metadata or secrets.
+5. Validate locally before opening a pull request.
 
-## Branch Names
+## Architecture rules
 
-| Prefix | Use |
-|---|---|
-| `feature/` | New public page or section |
-| `fix/` | Broken link, copy, layout, or script fix |
-| `docs/` | Documentation update |
-| `style/` | Visual refinement without content contract change |
-| `chore/` | Configuration, tooling, release maintenance |
+- Use semantic HTML and the existing page-relative asset paths.
+- Keep styles in the current CSS layers and JavaScript small and page-focused.
+- Keep visible copy aligned with Nexa's B2B cold-chain domain.
+- Mark future API, database, AI, IoT, mobile and hosting capabilities as roadmap unless independently evidenced.
+- Do not migrate the stack or introduce dependencies as part of a content or documentation change.
 
-## Architecture Rules
-
-- Use semantic HTML.
-- Keep styles in the existing CSS structure.
-- Keep JavaScript small and page-focused.
-- Keep visible content aligned with Nexa's B2B cold-chain domain.
-- Keep public links pointing to current deployed services.
-- Do not introduce external dependencies unless approved.
-
-## Validation Checklist
-
-Before requesting review:
+## Validation checklist
 
 ```bash
 python3 -m http.server 8000
 node --check assets/js/i18n.js
+node --check assets/js/interactions.js
+node --check assets/js/animations.js
 node --check assets/js/pricing.js
 ```
 
-For visual work, verify desktop and mobile layouts in a browser.
+For visual changes, inspect desktop and mobile layouts in a browser. For documentation changes, check relative links and release/version claims.
 
-## Pull Request Notes
+## Pull request notes
 
-Each pull request should include:
+Include affected files, public claim or link changes, responsive impact, validation commands and deployment notes only when deployment was actually verified.
 
-- Affected page or section.
-- Public claim or link changes.
-- Responsive layout impact.
-- Validation commands and results.
-- Deployment notes, if any.
-
----
-
-Team King · UPC · Aplicaciones Web · TB2 · 2026-10
+Nexa Suite · Website · 2026
