@@ -1,51 +1,27 @@
 # Nexa Website Security Policy
 
-## Supported Version
+## Supported version
 
-| Repository | Current Release | Delivery | Security Support |
-|---|---:|---|---|
-| `nexa-website` | `v4.0.1` | TB2 | Active |
+| Repository | Current release | Support scope |
+|---|---:|---|
+| `nexa-suite/website` | `v0.1.x` | Static HTML, CSS, JavaScript and documentation |
 
-Older tags remain available for academic traceability, but security corrections are applied to the latest active release line.
+The documentation edition `v1.0.0` does not create a product support line. No deployed service is asserted by this repository.
 
 ## Scope
 
-Security review for this repository includes:
+Security review covers static pages, client-side scripts, local browser state, public links, legal pages, repository configuration and community documentation.
 
-- Static HTML, CSS, and JavaScript.
-- Public links to WebApp, Platform API, and legal pages.
-- GitHub Pages deployment configuration.
-- Client-side i18n and cookie consent behavior.
-- External embeds or third-party links when present.
+## Reporting a vulnerability
 
-## Live Security Surface
+Do not open a public issue for vulnerabilities. Email `nexa.business.contact@gmail.com` with subject `[SECURITY][website] concise vulnerability title`.
 
-| Service | URL |
-|---|---|
-| Website | https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-website/ |
-| WebApp | https://nexa-webapp.onrender.com/#/auth/login |
-| Platform API | https://nexa-platform-20wt.onrender.com |
+Include the affected file or page, reproduction steps, expected and actual behavior, browser/environment details, risk and suggested mitigation when known. Do not send tokens, passwords, personal data or destructive exploit instructions.
 
-## Reporting a Vulnerability
+## Security requirements
 
-Do not open a public issue for vulnerabilities. Report privately to the Team King maintainers or through GitHub private vulnerability reporting when available.
-
-Include:
-
-- Affected page, file, link, or script.
-- Steps to reproduce.
-- Expected and actual behavior.
-- Browser and environment details.
-- Risk level and suggested mitigation, if known.
-
-## Security Requirements
-
-- Do not commit secrets, tokens, private contact data, or local artifacts.
-- Keep public links accurate and HTTPS-based.
-- Avoid adding third-party scripts without review.
-- Keep cookie and privacy language aligned with current site behavior.
-- Validate JavaScript syntax before release.
-
----
-
-Team King · UPC · Aplicaciones Web · TB2 · 2026-10
+- Keep secrets and private deployment values out of the repository.
+- Keep public links HTTPS-based and claim-accurate.
+- Review third-party scripts before adding them.
+- Keep privacy and cookie language aligned with the current static-site behavior.
+- Run the documented JavaScript syntax checks before a release.
