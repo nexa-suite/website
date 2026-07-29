@@ -13,11 +13,11 @@
 ![HTML5](https://img.shields.io/badge/HTML5-semantic-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Latest published release](https://img.shields.io/badge/latest%20published-v0.1.0-2563EB?style=for-the-badge)
+![Latest published release](https://img.shields.io/badge/latest%20published-v1.0.0-2563EB?style=for-the-badge)
 
 [Changelog](./CHANGELOG.md) · [Release notes](./docs/releases/) · [Contributing](./.github/CONTRIBUTING.md) · [Security](./.github/SECURITY.md)
 
-**Current repository:** Website · **Latest published release:** `v0.1.0` · **Local HEAD:** untagged · **Documentation edition:** `v1.0.0`
+**Current repository:** Website · **Current release:** `v1.0.0`
 
 [API](https://github.com/nexa-suite/api) · [Platform](https://github.com/nexa-suite/platform) · [Portal](https://github.com/nexa-suite/portal) · [Mobile](https://github.com/nexa-suite/mobile)
 
@@ -27,7 +27,7 @@
 
 ## Scope and evidence
 
-This repository contains the functional public site: static HTML pages, CSS design layers, vanilla JavaScript interactions and ES/EN content. `v0.1.0` is the latest published product release reference; the current local HEAD has no tag, so no newer release is inferred. The documentation edition `v1.0.0` records the repository map, local run instructions and claim boundaries; it is not a new product tag.
+This repository contains the functional public site: static HTML pages, CSS design layers, vanilla JavaScript interactions and ES/EN content. `v1.0.0` preserves that source and adds only repository governance, release documentation and a suite map.
 
 The website does not implement a backend, database, AI, IoT, mobile client or external cloud integration. Links carrying `data-webapp-path` are navigation targets in the public copy and are not runtime proof of an available WebApp service.
 
@@ -35,10 +35,10 @@ The website does not implement a backend, database, AI, IoT, mobile client or ex
 
 ```mermaid
 flowchart LR
-    Website["Website<br/>Static HTML/CSS/JS<br/>v0.1.0 published"]
-    Platform["Platform<br/>Angular shell<br/>v0.2.1"]
-    Portal["Buyer Portal<br/>Angular shell<br/>v0.2.1"]
-    API["API<br/>Spring Boot foundation<br/>v0.3.0"]
+    Website["Website<br/>Static HTML/CSS/JS<br/>v1.0.0"]
+    Platform["Platform<br/>Angular shell<br/>v0.3.0"]
+    Portal["Buyer Portal<br/>Angular shell<br/>v0.3.0"]
+    API["API<br/>Catalog query contract<br/>v0.4.0"]
 
     Website -. "public product navigation" .-> Platform
     Website -. "public product navigation" .-> Portal
@@ -54,11 +54,11 @@ The dotted links describe product boundaries and future approved contracts, not 
 
 | Repository | Current release | Responsibility | Evidence status |
 |---|---:|---|---|
-| **Website** | **`v0.1.0`** | Public product discovery | Latest published; local HEAD untagged |
-| [Platform](https://github.com/nexa-suite/platform) | `v0.2.1` | Internal operations shell | Angular shell |
-| [Portal](https://github.com/nexa-suite/portal) | `v0.2.1` | Buyer self-service shell | Angular shell |
-| [API](https://github.com/nexa-suite/api) | `v0.3.0` | Business and integration authority | Catalog domain foundation |
-| [Mobile](https://github.com/nexa-suite/mobile) | `v0.1.0` | Future native clients | Documentation-only |
+| **Website** | **`v1.0.0`** | Public product discovery | Functional static site |
+| [Platform](https://github.com/nexa-suite/platform) | `v0.3.0` | Internal operations shell | Angular shell |
+| [Portal](https://github.com/nexa-suite/portal) | `v0.3.0` | Buyer self-service shell | Angular shell |
+| [API](https://github.com/nexa-suite/api) | `v0.4.0` | Business and integration authority | Catalog query contract |
+| [Mobile](https://github.com/nexa-suite/mobile) | `v0.1.1` | Future native clients | Documentation-only |
 
 ## Pages
 
@@ -120,7 +120,7 @@ docs/releases/                        # Product and documentation release notes
 
 ## Documentation
 
-- [Documentation edition v1.0.0](./docs/releases/v1.0.0.md)
+- [Release notes v1.0.0](./docs/releases/v1.0.0.md)
 - [Release notes index](./docs/releases/)
 - [Changelog](./CHANGELOG.md)
 - [Release policy](./.github/RELEASE_POLICY.md)

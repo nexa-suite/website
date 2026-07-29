@@ -2,15 +2,27 @@
 
 All notable changes to the Nexa Website repository are documented here using Keep a Changelog conventions and Semantic Versioning.
 
-The current local checkout has no tag. `v0.1.0` is retained as the latest published release reference verified against the repository's public release page.
+`v1.0.0` is the current Website release. It preserves the functional static source and documents the repository foundation.
 
 ## [Unreleased]
 
 ### Documentation
 
-- Replaced historical academic deployment claims with the tagged Website release `v0.1.0`.
-- Added documentation edition `v1.0.0`, a local suite map and repository release indexes.
+- Replaced historical academic deployment claims with the Website `v1.0.0` release baseline.
+- Added a local suite map, repository release indexes and preserved functional-source claim boundaries.
 - Clarified that the site is static and does not prove API, database, AI, IoT, mobile or cloud implementation.
+
+## [1.0.0] - 2026-07-28
+
+### Added
+
+- Fresh local Git repository history with `main`, `develop` and feature/release flow.
+- Nexa Suite repository map, community guidance and release policy.
+- Website Docker/static hosting documentation and browser smoke evidence.
+
+### Changed
+
+- Preserved the existing HTML, CSS, JavaScript, assets, routes and declared hosting configuration without visual or functional redesign.
 
 ## [0.1.0] - 2026-07-22
 
@@ -23,5 +35,6 @@ The current local checkout has no tag. `v0.1.0` is retained as the latest publis
 
 - Added static-site security and community guidance.
 
-[Unreleased]: https://github.com/nexa-suite/website/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/nexa-suite/website/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/nexa-suite/website/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/nexa-suite/website/releases/tag/v0.1.0
