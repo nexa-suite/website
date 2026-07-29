@@ -1,13 +1,12 @@
-# Nexa Code of Conduct
+# Nexa Website Code of Conduct
 
 ## Scope
 
-This Code of Conduct applies to the Nexa repositories maintained by Team King for the TB2 delivery of **1ASI0730 Aplicaciones Web**:
+This Code of Conduct applies to contributors to this Website repository and its documentation:
 
-- `nexa-platform`
-- `nexa-webapp`
-- `nexa-website`
-- `nexa-ecosystem-report`
+- static HTML, CSS and JavaScript;
+- documentation, release notes and community files; and
+- discussions and reviews related to the Nexa Website.
 
 ## Our Commitment
 
@@ -31,7 +30,7 @@ We maintain a respectful, professional, and collaborative environment for all co
 
 ## Reporting
 
-Report concerns privately to the Team King maintainers or through the repository security/reporting features when appropriate. Reports will be reviewed discreetly and handled according to severity.
+Report concerns privately to `nexa.business.contact@gmail.com` with the repository name, context, dates, links or evidence and a safe way to respond. Do not use a public issue for harassment reports.
 
 ## Enforcement
 
@@ -39,4 +38,4 @@ Maintainers may request edits, close issues, block pull requests, remove content
 
 ---
 
-Team King · UPC · Aplicaciones Web · TB2 · 2026-10
+Nexa Suite · Website · 2026
