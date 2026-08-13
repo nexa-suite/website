@@ -8,9 +8,8 @@ All notable changes to the Nexa Website repository are documented here using Kee
 
 ### Documentation
 
-- Replaced historical academic deployment claims with the Website `v1.0.0` release baseline.
-- Added a local suite map, repository release indexes and preserved functional-source claim boundaries.
-- Clarified that the site is static and does not prove API, database, AI, IoT, mobile or cloud implementation.
+- Corrected current suite release metadata and API runtime labels against published tag and GitHub Release evidence.
+- Clarified current application/API integration evidence without asserting deployment or Website runtime integration.
 
 ## [1.0.0] - 2026-07-28
 
@@ -36,5 +35,4 @@ All notable changes to the Nexa Website repository are documented here using Kee
 - Added static-site security and community guidance.
 
 [Unreleased]: https://github.com/nexa-suite/website/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/nexa-suite/website/compare/v0.1.0...v1.0.0
-[0.1.0]: https://github.com/nexa-suite/website/releases/tag/v0.1.0
+[1.0.0]: https://github.com/nexa-suite/website/releases/tag/v1.0.0
