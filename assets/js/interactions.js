@@ -13,6 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
     FALLBACK_WEBAPP_BASE;
   const webappBase = configuredWebappBase.replace(/\/$/, '');
   const webappUrl = (path) => `${webappBase}/${path.replace(/^\#?\/?/, '')}`;
+  const configuredApiBase =
+    document.documentElement.dataset.apiBase ||
+    window.NEXA_API_BASE ||
+    localStorage.getItem('nexa-api-base') ||
+    (isLocalStack ? 'http://localhost:8080/api/v1' : '/api/v1');
+  const apiBase = configuredApiBase.replace(/\/$/, '');
   const getLang = () => (document.documentElement.lang.startsWith('es') ? 'es' : 'en');
 
   const copy = {
@@ -22,7 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
       emailRequired: 'Enter your work email.',
       emailInvalid: 'Enter a valid work email.',
       messageRequired: 'Tell us a bit about your operation.',
-      messageShort: 'Share at least 20 characters so we can understand your setup.'
+      messageShort: 'Share at least 20 characters so we can understand your setup.',
+      requestRateLimited: 'We have received several requests from this email or address. Please try again later.',
+      requestFailed: 'We could not receive your request. Please try again in a moment.'
     },
     es: {
       nameRequired: 'Ingresa tu nombre.',
@@ -30,7 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
       emailRequired: 'Ingresa tu correo de trabajo.',
       emailInvalid: 'Ingresa un correo de trabajo valido.',
       messageRequired: 'Cuentanos un poco sobre tu operacion.',
-      messageShort: 'Comparte al menos 20 caracteres para entender tu operacion.'
+      messageShort: 'Comparte al menos 20 caracteres para entender tu operacion.',
+      requestRateLimited: 'Recibimos varias solicitudes desde este correo o direccion. Intenta de nuevo mas tarde.',
+      requestFailed: 'No pudimos recibir tu solicitud. Intenta de nuevo en un momento.'
     }
   };
 
@@ -293,6 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   const contactSuccess = document.getElementById('contact-success');
   const contactSubmit = document.getElementById('contact-submit');
+  const contactFormError = document.getElementById('contact-form-error');
   const contactFields = {
     name: document.getElementById('contact-name'),
     email: document.getElementById('contact-email'),
@@ -377,7 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    contactForm.addEventListener('submit', (event) => {
+    contactForm.addEventListener('submit', async (event) => {
       event.preventDefault();
       if (contactForm.classList.contains('is-success')) return;
 
@@ -389,21 +400,51 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       setSubmitting(true);
-      const company = document.getElementById('contact-company')?.value.trim() || '';
-      const subject = encodeURIComponent(`Nexa contact - ${company || contactFields.name.value.trim()}`);
-      const body = encodeURIComponent([
-        `Name: ${contactFields.name.value.trim()}`,
-        `Work email: ${contactFields.email.value.trim()}`,
-        `Company: ${company || '-'}`,
-        '',
-        contactFields.message.value.trim(),
-      ].join('\n'));
+      if (contactFormError) {
+        contactFormError.textContent = '';
+        contactFormError.hidden = true;
+      }
 
-      window.location.href = `mailto:hello@nexa.lat?subject=${subject}&body=${body}`;
-      setSubmitting(false);
-      contactForm.classList.add('is-success');
-      contactSuccess.hidden = false;
-      contactSuccess.focus();
+      const company = document.getElementById('contact-company')?.value.trim() || '';
+      const requestType = document.getElementById('contact-type')?.value || 'CONTACT';
+
+      try {
+        const response = await fetch(`${apiBase}/public/contact-requests`, {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            requestType,
+            name: contactFields.name.value.trim(),
+            email: contactFields.email.value.trim(),
+            companyName: company || null,
+            message: contactFields.message.value.trim()
+          })
+        });
+        const responseBody = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          const error = new Error(responseBody.code || 'PUBLIC_CONTACT_REQUEST_FAILED');
+          error.code = responseBody.code || '';
+          throw error;
+        }
+
+        contactForm.classList.add('is-success');
+        contactForm.hidden = true;
+        contactSuccess.hidden = false;
+        contactSuccess.style.display = 'block';
+        contactSuccess.focus();
+      } catch (error) {
+        if (!contactFormError) return;
+        contactFormError.textContent = error?.code === 'PUBLIC_CONTACT_RATE_LIMITED'
+          ? t('requestRateLimited')
+          : t('requestFailed');
+        contactFormError.hidden = false;
+        contactFormError.focus();
+      } finally {
+        setSubmitting(false);
+      }
     });
 
     document.addEventListener('nexa:languagechange', syncTranslatedErrors);

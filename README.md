@@ -27,9 +27,9 @@
 
 ## Scope and evidence
 
-This repository contains the functional public site: static HTML pages, CSS design layers, vanilla JavaScript interactions and ES/EN content. `v1.0.0` preserves that source and adds only repository governance, release documentation and a suite map.
+This repository contains the functional public site: static HTML pages, CSS design layers, vanilla JavaScript interactions and ES/EN content. The public contact and demo form submits to the Nexa API; persistence, validation and abuse controls remain API responsibilities. The latest published Website release is still `v1.0.0`; the API-backed form is unreleased work on `develop`.
 
-The website does not implement a backend, database, AI, IoT, mobile client or external cloud integration. Links carrying `data-webapp-path` are navigation targets in the public copy and are not runtime proof of an available WebApp service.
+The website does not implement a backend, database, AI, IoT, mobile client or external cloud integration. It delegates public contact intake to `POST /api/v1/public/contact-requests`. Links carrying `data-webapp-path` are navigation targets in the public copy and are not runtime proof of an available WebApp service.
 
 ## Product boundaries
 
@@ -96,6 +96,8 @@ python3 -m http.server 8000
 
 Open [http://localhost:8000](http://localhost:8000). The site can also be served by the existing [Dockerfile](./Dockerfile); `render.yaml` describes static hosting configuration but is not deployment evidence.
 
+The local contact form targets `http://localhost:8080/api/v1` by default. Configure another API origin with `data-api-base` on the root HTML element, `window.NEXA_API_BASE`, or the `nexa-api-base` local-storage value before production hosting. The deployed API origin and outbound notification provider remain environment-specific configuration, not Website release evidence.
+
 ## Validation
 
 ```bash
@@ -105,7 +107,7 @@ node --check assets/js/animations.js
 node --check assets/js/pricing.js
 ```
 
-For visual work, serve the site locally and inspect desktop and mobile layouts in a browser. This documentation update does not rework functional HTML, CSS or JavaScript.
+For visual work, serve the site locally and inspect desktop and mobile layouts in a browser. The contact flow can be smoke-tested with the local API running and the Website served on port `8000`.
 
 ## Project structure
 
@@ -128,4 +130,4 @@ docs/releases/                        # Product and documentation release notes
 
 ## Claim boundary
 
-Marketing content may describe future Nexa capabilities, but only content explicitly marked as available is treated as current evidence. No page in this repository proves API integration, persistence, tenant authorization, GPS, IoT telemetry, payment processing, AI or mobile execution.
+Marketing content may describe future Nexa capabilities, but only content explicitly marked as available is treated as current evidence. No page in this repository proves tenant authorization, GPS, IoT telemetry, payment processing, AI or mobile execution. The contact form is an API integration surface; API persistence and authorization evidence belongs to the API repository and its runtime gates.
