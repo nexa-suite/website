@@ -23,7 +23,9 @@ All notable changes to the Nexa Website repository are documented here using Kee
 
 - Preserved the existing HTML, CSS, JavaScript, assets, routes and declared hosting configuration without visual or functional redesign.
 
-## [0.1.0] - 2026-07-22
+## Historical reference: Website pre-reset baseline (0.1.0)
+
+This historical content is retained for context. Version `v0.1.0` is not verifiable as a published release in the current canonical repository; no current tag or GitHub Release is implied.
 
 ### Added
 
