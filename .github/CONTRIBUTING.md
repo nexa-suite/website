@@ -6,8 +6,8 @@ This repository is the static public Website for Nexa Suite.
 
 | Field | Value |
 |---|---|
-| Latest published product release | `v0.1.0` |
-| Documentation edition | `v1.0.0` |
+| Latest published product release | `v1.0.0` |
+| Current documentation baseline | `v1.0.0` |
 | Local Git state | HEAD is untagged |
 | Runtime | Static HTML / CSS / JavaScript |
 | Dependencies | None required for local serving |
