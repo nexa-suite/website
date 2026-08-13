@@ -9,7 +9,12 @@ All notable changes to the Nexa Website repository are documented here using Kee
 ### Documentation
 
 - Corrected current suite release metadata and API runtime labels against published tag and GitHub Release evidence.
-- Clarified current application/API integration evidence without asserting deployment or Website runtime integration.
+- Documented the API-backed public contact intake and local API-origin configuration without asserting deployment.
+
+### Added
+
+- Functional ES/EN contact and demo request form with client validation, API error handling and success state.
+- Website-to-API submission contract for `POST /api/v1/public/contact-requests`.
 
 ## [1.0.0] - 2026-07-28
 
