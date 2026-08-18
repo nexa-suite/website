@@ -4,7 +4,7 @@
 
 | Repository | Current release | Support scope |
 |---|---:|---|
-| `nexa-suite/website` | `v1.0.0` | Static HTML, CSS, JavaScript and documentation |
+| `nexa-suite/website` | `v1.1.x` | Static HTML, CSS, JavaScript and documentation |
 
 No deployed service is asserted by this repository.
 
