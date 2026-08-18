@@ -2,7 +2,7 @@
 
 ## Versioning
 
-The Website uses Semantic Versioning independently from the other Nexa repositories. The current product release is `v0.1.0`. Documentation editions may be named separately and must not be presented as product tags unless they are actually tagged and released.
+The Website uses Semantic Versioning independently from the other Nexa repositories. Published release truth comes from an immutable Git tag and its corresponding published GitHub Release in the canonical repository. README files, maps and documentation editions do not define release truth.
 
 ## Release checklist
 
@@ -15,4 +15,4 @@ The Website uses Semantic Versioning independently from the other Nexa repositor
 - [ ] Version and tag match the repository state.
 - [ ] Annotated tag and GitHub Release published by an authorized maintainer.
 
-Do not claim hosting, external services or product integrations without current evidence. Do not retag a published version or force-push release history.
+Do not claim hosting, external services or product integrations without current evidence. Do not retag a published version, force-push release history or create a release without authorization.

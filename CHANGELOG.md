@@ -2,15 +2,23 @@
 
 All notable changes to the Nexa Website repository are documented here using Keep a Changelog conventions and Semantic Versioning.
 
-`v1.0.0` is the current Website release. It preserves the functional static source and documents the repository foundation.
+`v1.1.0` is the current Website release. It preserves the functional static source and documents the API-backed contact entry point.
 
 ## [Unreleased]
 
+No unreleased changes are included in this baseline.
+
+## [1.1.0] - 2026-08-18
+
 ### Documentation
 
-- Replaced historical academic deployment claims with the Website `v1.0.0` release baseline.
-- Added a local suite map, repository release indexes and preserved functional-source claim boundaries.
-- Clarified that the site is static and does not prove API, database, AI, IoT, mobile or cloud implementation.
+- Corrected current suite release metadata and API runtime labels against published tag and GitHub Release evidence.
+- Documented the API-backed public contact intake and local API-origin configuration without asserting deployment.
+
+### Added
+
+- Functional ES/EN contact and demo request form with client validation, API error handling and success state.
+- Website-to-API submission contract for `POST /api/v1/public/contact-requests`.
 
 ## [1.0.0] - 2026-07-28
 
@@ -24,7 +32,9 @@ All notable changes to the Nexa Website repository are documented here using Kee
 
 - Preserved the existing HTML, CSS, JavaScript, assets, routes and declared hosting configuration without visual or functional redesign.
 
-## [0.1.0] - 2026-07-22
+## Historical reference: Website pre-reset baseline (0.1.0)
+
+This historical content is retained for context. Version `v0.1.0` is not verifiable as a published release in the current canonical repository; no current tag or GitHub Release is implied.
 
 ### Added
 
@@ -35,6 +45,6 @@ All notable changes to the Nexa Website repository are documented here using Kee
 
 - Added static-site security and community guidance.
 
-[Unreleased]: https://github.com/nexa-suite/website/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/nexa-suite/website/compare/v0.1.0...v1.0.0
-[0.1.0]: https://github.com/nexa-suite/website/releases/tag/v0.1.0
+[Unreleased]: https://github.com/nexa-suite/website/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/nexa-suite/website/releases/tag/v1.1.0
+[1.0.0]: https://github.com/nexa-suite/website/releases/tag/v1.0.0

@@ -3281,6 +3281,18 @@
   padding-right: 36px;
 }
 
+.form-field-error,
+.contact-form-error {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  color: #b42318;
+}
+
+.contact-form-error {
+  margin-bottom: 16px;
+}
+
 .contact-success {
   display: none;
   text-align: center;
