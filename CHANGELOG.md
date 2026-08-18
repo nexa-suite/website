@@ -2,9 +2,13 @@
 
 All notable changes to the Nexa Website repository are documented here using Keep a Changelog conventions and Semantic Versioning.
 
-`v1.0.0` is the current Website release. It preserves the functional static source and documents the repository foundation.
+`v1.1.0` is the current Website release. It preserves the functional static source and documents the API-backed contact entry point.
 
 ## [Unreleased]
+
+No unreleased changes are included in this baseline.
+
+## [1.1.0] - 2026-08-18
 
 ### Documentation
 
@@ -41,5 +45,6 @@ This historical content is retained for context. Version `v0.1.0` is not verifia
 
 - Added static-site security and community guidance.
 
-[Unreleased]: https://github.com/nexa-suite/website/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/nexa-suite/website/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/nexa-suite/website/releases/tag/v1.1.0
 [1.0.0]: https://github.com/nexa-suite/website/releases/tag/v1.0.0
