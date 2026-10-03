@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#2563EB" />
+  <meta name="description" data-i18n-content="platform.meta.description" content="Alcance de producto Nexa V1 para comercialización B2B, inventario y despacho en operaciones de importación y cadena de frío." />
+  <meta name="keywords" content="Nexa, plataforma, catalogo, inventario, pedidos, despacho, FEFO" />
+  <meta name="author" content="Nexa" />
+  <meta property="og:title" data-i18n-content="platform.meta.ogTitle" content="Nexa — Alcance de la plataforma" />
+  <meta property="og:description" data-i18n-content="platform.meta.ogDescription" content="Dominios de producto aceptados y estado de implementación, presentados por separado." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nexa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title data-i18n-content="platform.meta.title">Nexa — Lo que hace la plataforma</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/main-nexa-small-icon.svg" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body data-page="platform" data-lang="es">
+
+<a href="#modules" class="skip-to-content">Skip to content</a>
+
+
+<nav class="navbar" id="navbar" role="navigation" aria-label="Navegacion principal" data-i18n-aria-label="shared.nav.aria">
+  <div class="navbar-inner">
+
+    <a href="../index.html" class="navbar-logo" aria-label="Inicio de Nexa" data-i18n-aria-label="shared.nav.logoAria">
+      <img src="../assets/img/nexa.svg" alt="" class="navbar-logo-image" width="110" height="34" />
+      <span class="visually-hidden">Nexa</span>
+    </a>
+
+    <div class="navbar-links" id="navbar-links">
+      <a href="platform.html" class="navbar-link active" id="nav-platform" aria-current="page" data-i18n="shared.nav.platform">Plataforma</a>
+      <a href="buyer-portal.html" class="navbar-link" id="nav-buyer-portal" data-i18n="shared.nav.buyerPortal">Buyer Portal</a>
+
+      <div class="dropdown-trigger" id="nav-solutions-trigger">
+        <button class="navbar-link dropdown-btn" type="button" id="nav-solutions"
+                aria-expanded="false" aria-controls="solutions-dropdown" aria-haspopup="true"
+                data-i18n="shared.nav.solutions">
+          Soluciones
+          <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="dropdown-panel" id="solutions-dropdown" role="menu">
+          <a href="solutions/importers.html" class="dropdown-item" role="menuitem" id="nav-importers">
+            <div class="dropdown-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="dropdown-item-title" data-i18n="shared.nav.importers.title">Importadores y mayoristas</div>
+              <div class="dropdown-item-desc" data-i18n="shared.nav.importers.desc">Ingreso portuario para lotes de queso, charcuteria y lacteos.</div>
+            </div>
+          </a>
+          <a href="solutions/distributors.html" class="dropdown-item" role="menuitem" id="nav-distributors">
+            <div class="dropdown-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="dropdown-item-title" data-i18n="shared.nav.distributors.title">Distribuidores</div>
+              <div class="dropdown-item-desc" data-i18n="shared.nav.distributors.desc">Cumplimiento de ultima milla, reposicion FEFO y pedidos B2B.</div>
+            </div>
+          </a>
+          <a href="solutions/cold-storage.html" class="dropdown-item" role="menuitem" id="nav-cold-storage">
+            <div class="dropdown-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="dropdown-item-title" data-i18n="shared.nav.storage.title">Operadores de camaras frias</div>
+              <div class="dropdown-item-desc" data-i18n="shared.nav.storage.desc">Camaras de queso, camaras lacteas y registros de inocuidad alimentaria.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="company.html" class="navbar-link" id="nav-company" data-i18n="shared.nav.company">Empresa</a>
+      <a href="pricing.html" class="navbar-link" id="nav-pricing" data-i18n="shared.nav.pricing">Estado comercial</a>
+      <a href="faq.html" class="navbar-link navbar-link-mobile-only" id="nav-faq-mobile" data-i18n="shared.nav.faq">FAQ</a>
+
+      <div class="navbar-mobile-actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma" data-i18n-aria-label="shared.nav.languageAria">
+          <button class="lang-switch-btn" type="button" data-lang-option="en">EN</button>
+          <button class="lang-switch-btn is-active" type="button" data-lang-option="es">ES</button>
+        </div>
+        <a href="platform.html#modules" class="btn btn-primary btn-sm" id="nav-cta-mobile" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a>
+        <a href="login.html" class="btn btn-secondary btn-sm navbar-login-btn" data-i18n="shared.nav.login">Login</a>
+      </div>
+    </div>
+
+    <div class="navbar-actions">
+      <div class="lang-switch" role="group" aria-label="Selector de idioma" data-i18n-aria-label="shared.nav.languageAria">
+        <button class="lang-switch-btn" type="button" data-lang-option="en">EN</button>
+        <button class="lang-switch-btn is-active" type="button" data-lang-option="es">ES</button>
+      </div>
+      <a href="platform.html#modules" class="btn btn-primary btn-sm" id="nav-cta" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a>
+      <a href="login.html" class="btn btn-secondary btn-sm navbar-login-btn" data-i18n="shared.nav.login">Login</a>
+      <a href="faq.html" class="navbar-link navbar-link-action" data-i18n="shared.nav.faq">FAQ</a>
+    </div>
+
+    <button type="button" class="navbar-mobile-toggle" aria-label="Abrir navegacion" data-i18n-aria-label="shared.nav.mobileToggle"
+            aria-expanded="false" aria-controls="navbar-links" id="mobile-menu-toggle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
+  </div>
+</nav>
+
+<div class="navbar-overlay" id="navbar-overlay" aria-hidden="true"></div>
+
+
+
+<header class="page-hero page-hero-split" id="platform-hero" aria-labelledby="platform-headline">
+  <div class="container-wide">
+    <div class="hero-split-layout reveal">
+      <div class="page-hero-copy page-hero-copy-left">
+        <div class="badge mb-4" data-i18n="platform.hero.badge">Alcance de producto</div>
+        <h1 id="platform-headline" data-i18n-html="platform.hero.title">Dominios B2B para solicitudes, inventario<br>y coordinación de despacho.</h1>
+        <p class="text-lead" data-i18n="platform.hero.copy">Nexa V1 define un SaaS B2B multi-tenant para importadores, distribuidores y mayoristas. Esta página describe alcance aceptado, no disponibilidad productiva.</p>
+        <div class="hero-cta-row">
+          <a href="platform.html#modules" class="btn btn-primary btn-lg" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a>
+          <a href="login.html" class="btn btn-secondary btn-lg" data-i18n="shared.nav.login">Login</a>
+        </div>
+      </div>
+
+      <div class="hero-sidecard" aria-label="Alcance operativo de la plataforma" data-i18n-aria-label="platform.hero.sidecardAria">
+        <div class="hero-sidecard-kicker" data-i18n="platform.hero.kicker">Objetivo Nexa V1</div>
+        <div class="hero-sidecard-title" data-i18n="platform.hero.sidecardTitle">Alcance de producto; no es una pantalla activa.</div>
+        <div class="hero-pill-grid">
+          <div class="page-hero-trust-pill" data-i18n="platform.hero.pill1">Negocio V1 definido</div>
+          <div class="page-hero-trust-pill" data-i18n="platform.hero.pill2">Captura térmica manual</div>
+          <div class="page-hero-trust-pill" data-i18n="platform.hero.pill3">Integraciones diferidas</div>
+          <div class="page-hero-trust-pill" data-i18n="platform.hero.pill4">Readiness abierta</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="section section-tight section-surface" id="webapp-screens" aria-labelledby="webapp-screens-headline">
+  <div class="container-wide">
+    <div class="section-header is-left is-tight reveal">
+      <div class="badge mb-4" data-i18n="mobile.design.badge">Diseño de operaciones</div>
+      <h2 id="webapp-screens-headline" data-i18n="mobile.design.title">Cómo se conectan las tareas de Nexa.</h2>
+      <p class="text-lead" data-i18n="mobile.design.copy">Estos diagramas de dominio explican intención comercial, inventario y continuidad de entrega. Representan el diseño; no son capturas de una aplicación en producción.</p>
+    </div>
+
+    <div class="webapp-screenshot-grid reveal reveal-delay-1">
+      <figure class="webapp-screenshot-card">
+        <img src="../assets/img/domain/buyer-commercial-intent.svg" alt="TARGET: intención comercial del Buyer" width="1440" height="960" loading="lazy" />
+        <figcaption data-i18n="mobile.design.caption1">Una solicitud expresa la intención comercial de un Buyer autorizado.</figcaption>
+      </figure>
+      <figure class="webapp-screenshot-card">
+        <img src="../assets/img/domain/stock-becoming-sellable.svg" alt="TARGET: stock pasa a ser vendible" width="1440" height="960" loading="lazy" />
+        <figcaption data-i18n="mobile.design.caption2">Recepción, lotes y condiciones determinan el stock disponible.</figcaption>
+      </figure>
+      <figure class="webapp-screenshot-card">
+        <img src="../assets/img/domain/partial-delivery-continuation.svg" alt="TARGET: continuidad de entrega parcial" width="1440" height="960" loading="lazy" />
+        <figcaption data-i18n="mobile.design.caption3">Una entrega parcial conserva su resultado y la continuidad pendiente.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section section-tight section-surface" id="modules" aria-labelledby="modules-headline">
+  <div class="container-wide">
+    <div class="section-header is-left is-tight reveal">
+      <div class="badge mb-4" data-i18n="platform.modules.badge">Dominios Nexa V1</div>
+      <h2 id="modules-headline" data-i18n="platform.modules.title">Áreas de producto definidas.</h2>
+      <p class="text-lead" data-i18n="platform.modules.copy">La definición de dominios no certifica que cada flujo esté implementado o aceptado.</p>
+    </div>
+
+    <div class="platform-modules-grid">
+<div class="module-card module-card-featured reveal" id="catalog">
+        <div class="module-card-left">
+          <div class="module-card-number">01</div>
+          <div class="module-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+          <h3 data-i18n="platform.modules.catalog.title">Catálogo</h3>
+          <p data-i18n="platform.modules.catalog.copy">Productos y condiciones comerciales configurados dentro del tenant.</p>
+        </div>
+<div class="module-preview-table" aria-label="Catalog preview">
+          <div class="module-table-header">
+            <div class="module-table-col-label" data-i18n="platform.modules.catalog.col1">Producto</div>
+            <div class="module-table-col-label" data-i18n="platform.modules.catalog.col2">Stock</div>
+            <div class="module-table-col-label" data-i18n="platform.modules.catalog.col3">Rango temp.</div>
+            <div class="module-table-col-label" data-i18n="platform.modules.catalog.col4">Estado</div>
+          </div>
+          <div class="module-table-row">
+            <div class="module-table-cell module-table-cell-primary">Brie Wheel 1kg</div>
+            <div class="module-table-cell">1,200 units</div>
+            <div class="module-table-cell module-table-cell-mono">+2°C / +6°C</div>
+            <div class="module-table-cell"><span class="status-dot status-optimal" data-i18n="platform.modules.catalog.statusOptimal">Sin inventario real</span></div>
+          </div>
+          <div class="module-table-row">
+            <div class="module-table-cell module-table-cell-primary">Mild Gouda 2.5kg</div>
+            <div class="module-table-cell">4,500 kg</div>
+            <div class="module-table-cell module-table-cell-mono">+2°C / +6°C</div>
+            <div class="module-table-cell"><span class="status-dot status-optimal" data-i18n="platform.modules.catalog.statusOptimal">Sin inventario real</span></div>
+          </div>
+          <div class="module-table-row">
+            <div class="module-table-cell module-table-cell-primary">Greek Yogurt 1kg</div>
+            <div class="module-table-cell">80 crates</div>
+            <div class="module-table-cell module-table-cell-mono">+1°C / +4°C</div>
+            <div class="module-table-cell"><span class="status-dot status-alert" data-i18n="platform.modules.catalog.statusLow">Ejemplo conceptual</span></div>
+          </div>
+          <div class="module-table-row">
+            <div class="module-table-cell module-table-cell-primary">Jamon Cocido 250g</div>
+            <div class="module-table-cell">620 kg</div>
+            <div class="module-table-cell module-table-cell-mono">0°C / +4°C</div>
+            <div class="module-table-cell"><span class="status-dot status-optimal" data-i18n="platform.modules.catalog.statusOptimal">Sin inventario real</span></div>
+          </div>
+        </div>
+      </div>
+<div class="module-card reveal" id="inventory">
+        <div class="module-card-number">02</div>
+        <div class="module-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line>
+            <line x1="8" y1="18" x2="21" y2="18"></line>
+            <line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line>
+            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+          </svg>
+        </div>
+        <h3 data-i18n="platform.modules.inventory.title">Inventario</h3>
+        <p data-i18n="platform.modules.inventory.copy">Stock y lotes por ubicación. FEFO es la regla por defecto para SKU con vencimiento; implementación se verifica por separado.</p>
+      </div>
+<div class="module-card reveal reveal-delay-1" id="orders">
+        <div class="module-card-number">03</div>
+        <div class="module-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </div>
+        <h3 data-i18n="platform.modules.orders.title">Solicitudes de compra</h3>
+        <p data-i18n="platform.modules.orders.copy">El Buyer autorizado inicia solicitudes con su tenant proveedor actual.</p>
+      </div>
+<div class="module-card reveal" id="telemetry">
+        <div class="module-card-number">04</div>
+        <div class="module-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+          </svg>
+        </div>
+        <h3 data-i18n-html="platform.modules.telemetry.title">Temperatura y despacho</h3>
+        <p data-i18n="platform.modules.telemetry.copy">Captura manual de temperatura. El alcance móvil contempla ubicación del Driver durante la jornada; su disponibilidad y privacidad requieren validación propia.</p>
+      </div>
+<div class="module-card reveal reveal-delay-1" id="traceability">
+        <div class="module-card-number">05</div>
+        <div class="module-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        <h3 data-i18n="platform.modules.traceability.title">Documentos comerciales</h3>
+        <p data-i18n="platform.modules.traceability.copy">El alcance modela documentos comerciales. Una factura comercial no es comprobante fiscal SUNAT.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="what-changes" aria-labelledby="changes-headline">
+  <div class="container-wide">
+    <div class="section-header is-left is-tight reveal">
+      <div class="badge mb-4" data-i18n="platform.changes.badge">Cambios visibles</div>
+      <h2 id="changes-headline" data-i18n="platform.changes.title">Flujos representados como objetivo</h2>
+      <p class="text-lead" data-i18n="platform.changes.copy">Los diagramas muestran el modelo de producto; no comparan clientes ni resultados medidos.</p>
+    </div>
+
+    <div class="platform-changes-grid reveal reveal-delay-1">
+      <div class="platform-change-card">
+        <div class="platform-change-before">
+          <span class="platform-change-label platform-change-label-red" data-i18n="shared.before">Antes</span>
+          <p data-i18n="platform.changes.card1.before">El stock se sigue en hojas de calculo. Nadie sabe que esta por vencer hasta que ya es tarde.</p>
+        </div>
+        <div class="platform-change-after">
+          <span class="platform-change-label platform-change-label-green" data-i18n="shared.after">Despues</span>
+          <p data-i18n="platform.changes.card1.after">Stock visible por ubicacion. Alertas de vencimiento dentro del flujo planificado. La rotacion FEFO deja de ser opcional.</p>
+        </div>
+      </div>
+      <div class="platform-change-card">
+        <div class="platform-change-before">
+          <span class="platform-change-label platform-change-label-red" data-i18n="shared.before">Antes</span>
+          <p data-i18n="platform.changes.card2.before">Los pedidos llegan por WhatsApp, telefono o correo. Tu equipo los vuelve a escribir en otro sistema.</p>
+        </div>
+        <div class="platform-change-after">
+          <span class="platform-change-label platform-change-label-green" data-i18n="shared.after">Despues</span>
+          <p data-i18n="platform.changes.card2.after">Los clientes piden desde un portal B2B con precios definidos y una vista de stock actualizada. Los pedidos llegan estructurados y listos para revision de despacho.</p>
+        </div>
+      </div>
+      <div class="platform-change-card">
+        <div class="platform-change-before">
+          <span class="platform-change-label platform-change-label-red" data-i18n="shared.before">Antes</span>
+          <p data-i18n="platform.changes.card3.before">Disputas de entrega sin evidencia. El cliente dice que llego tibio y no tienes como evidenciar lo contrario.</p>
+        </div>
+        <div class="platform-change-after">
+          <span class="platform-change-label platform-change-label-green" data-i18n="shared.after">Despues</span>
+          <p data-i18n="platform.changes.card3.after">Firma y foto forman parte de la evidencia de entrega. La ubicación durante jornada tiene límites de privacidad y no se ofrece como servicio público activo.</p>
+        </div>
+      </div>
+      <div class="platform-change-card">
+        <div class="platform-change-before">
+          <span class="platform-change-label platform-change-label-red" data-i18n="shared.before">Antes</span>
+          <p data-i18n="platform.changes.card4.before">La data de temperatura vive en un logger local que nadie revisa hasta la auditoria.</p>
+        </div>
+        <div class="platform-change-after">
+          <span class="platform-change-label platform-change-label-green" data-i18n="shared.after">Despues</span>
+          <p data-i18n="platform.changes.card4.after">La captura manual registra evidencia térmica. Las integraciones de sensores y la monitorización continua requieren trabajo posterior.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section section-tight section-surface" id="how-it-works" aria-labelledby="workflow-headline">
+  <div class="container-wide">
+    <div class="section-header is-left is-tight reveal">
+      <div class="badge mb-4" data-i18n="platform.workflow.badge">Límites explícitos</div>
+      <h2 id="workflow-headline" data-i18n="platform.workflow.title">Qué afirma esta descripción</h2>
+      <p class="text-lead" data-i18n="platform.workflow.copy">La web presenta el alcance acordado de Nexa y mantiene separado el estado de implementación.</p>
+    </div>
+
+    <div class="platform-workflow-grid reveal reveal-delay-1">
+      <div class="platform-workflow-step">
+        <div class="platform-workflow-number">01</div>
+        <h3 data-i18n="platform.workflow.step1.title">Tenant y catálogo</h3>
+        <p data-i18n="platform.workflow.step1.copy">El catálogo pertenece al tenant que opera el negocio.</p>
+      </div>
+      <div class="platform-workflow-step">
+        <div class="platform-workflow-number">02</div>
+        <h3 data-i18n="platform.workflow.step2.title">Captura de temperatura</h3>
+        <p data-i18n="platform.workflow.step2.copy">V1 contempla captura manual por tenant/SKU; telemetría continua está diferida.</p>
+      </div>
+      <div class="platform-workflow-step">
+        <div class="platform-workflow-number">03</div>
+        <h3 data-i18n="platform.workflow.step3.title">Comprador autorizado</h3>
+        <p data-i18n="platform.workflow.step3.copy">El Buyer se relaciona con su proveedor actual.</p>
+      </div>
+      <div class="platform-workflow-step">
+        <div class="platform-workflow-number">04</div>
+        <h3 data-i18n="platform.workflow.step4.title">Integraciones futuras</h3>
+        <p data-i18n="platform.workflow.step4.copy">GPS, IoT, SUNAT y otros proveedores externos no se presentan como entregados.</p>
+      </div>
+    </div>
+
+    <div class="platform-workflow-note reveal" data-i18n-html="platform.workflow.note">TARGET significa dirección de producto. No confirma una función activa o aceptada.</div>
+  </div>
+</section>
+
+
+
+<section class="section" id="get-started" aria-labelledby="phases-headline">
+  <div class="container-wide">
+    <div class="section-header is-left is-tight reveal">
+      <div class="badge mb-4" data-i18n="platform.phases.badge">Estado</div>
+      <h2 id="phases-headline" data-i18n="platform.phases.title">Producto definido no equivale a producción.</h2>
+      <p class="text-lead" data-i18n="platform.phases.copy">La definición de producto establece el alcance de negocio V1. No se publican fechas de despliegue ni promesas de soporte.</p>
+    </div>
+
+    <div class="phase-grid">
+      <div class="phase-card reveal">
+        <div class="phase-number">01</div>
+        <div class="phase-title" data-i18n="platform.phases.step1.title">Alcance de negocio</div>
+        <p class="phase-desc" data-i18n="platform.phases.step1.copy">Las decisiones aceptadas definen qué resuelve Nexa V1.</p>
+        <ul class="phase-checklist">
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step1.item1">Importadores, distribuidores y mayoristas</span>
+          </li>
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step1.item2">Relación Buyer con tenant proveedor</span>
+          </li>
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step1.item3">Flujos comerciales y operativos V1</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="phase-card reveal reveal-delay-1">
+        <div class="phase-number">02</div>
+        <div class="phase-title" data-i18n="platform.phases.step2.title">Dirección de implementación</div>
+        <p class="phase-desc" data-i18n="platform.phases.step2.copy">Los clientes Web y móviles siguen sus tecnologías objetivo aprobadas.</p>
+        <ul class="phase-checklist">
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step2.item1">Implementación sujeta a verificación técnica</span>
+          </li>
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step2.item2">Integraciones externas diferidas</span>
+          </li>
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step2.item3">Captura térmica manual en V1</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="phase-card reveal reveal-delay-2">
+        <div class="phase-number">03</div>
+        <div class="phase-title" data-i18n="platform.phases.step3.title">Gates pendientes</div>
+        <p class="phase-desc" data-i18n="platform.phases.step3.copy">La aceptación de producto, sistema y readiness productiva requieren evidencia propia.</p>
+        <ul class="phase-checklist">
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step3.item1">Sin promesa de go-live</span>
+          </li>
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step3.item2">Sin SLA público verificado</span>
+          </li>
+          <li>
+            <div class="phase-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="platform.phases.step3.item3">Sin acceso público anunciado</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+
+
+
+<section class="final-cta" id="platform-cta" aria-labelledby="platform-cta-headline">
+  <div class="container">
+    <div class="closing-cta reveal">
+      <div class="closing-cta-copy">
+        <div class="badge mb-4" data-i18n="platform.cta.badge">Alcance público</div>
+        <h2 id="platform-cta-headline" data-i18n-html="platform.cta.title">Consulta el alcance definido de Nexa.</h2>
+        <p class="text-lead" data-i18n="platform.cta.copy">Esta web no habilita registro ni ingreso a una aplicación.</p>
+      </div>
+      <div class="closing-cta-actions">
+        <div class="closing-cta-note" data-i18n="platform.cta.note">Estado comercial</div>
+        <p class="closing-cta-meta" data-i18n="platform.cta.meta">Consulta la descripción de Operations Mobile, el equipo y las preguntas frecuentes.</p>
+        <div class="cta-btn-row">
+          <a href="platform.html#modules" class="btn btn-primary btn-lg" id="platform-cta-primary" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a>
+          <a href="faq.html" class="btn btn-secondary btn-lg" id="platform-cta-faq" data-i18n="platform.cta.secondary">Abrir FAQ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-editorial">
+        <a href="../index.html" class="navbar-logo footer-logo" aria-label="Inicio de Nexa" data-i18n-aria-label="shared.nav.logoAria">
+          <img src="../assets/img/nexa.svg" alt="" class="navbar-logo-image" width="110" height="34" />
+          <span class="visually-hidden">Nexa</span>
+        </a>
+        <p class="footer-kicker" data-i18n="shared.footer.kicker">Mantente cerca</p>
+        <h2 class="footer-editorial-title" data-i18n="shared.footer.editorialTitle">Conoce el alcance aceptado de Nexa y el estado público de su implementación.</h2>
+        <p class="footer-tagline" data-i18n="shared.footer.editorialCopy">La definición del producto y la preparación productiva son estados distintos.</p>
+        <div class="footer-editorial-actions">
+          <a href="company.html#pixel-perfect-team" class="btn btn-primary btn-md" data-i18n="shared.footer.editorialPrimary">Revisar el equipo</a>
+          <a href="platform.html" class="btn btn-secondary btn-md" data-i18n="shared.footer.editorialSecondary">Ver el alcance</a>
+        </div>
+      </div>
+
+      <div class="footer-nav-shell">
+        <div class="footer-nav-grid">
+          <div>
+            <div class="footer-col-title" data-i18n="shared.footer.product">Producto</div>
+            <ul class="footer-links">
+              <li><a href="about-the-product.html" data-i18n="shared.nav.aboutProduct">Sobre el producto</a></li>
+              <li><a href="platform.html" data-i18n="shared.footer.platformOverview">Resumen de la plataforma</a></li>
+              <li><a href="platform.html#catalog" data-i18n="shared.footer.productData">Datos de producto</a></li>
+              <li><a href="platform.html#inventory" data-i18n="shared.footer.operationalInventory">Inventario operativo</a></li>
+              <li><a href="platform.html#traceability" data-i18n="shared.footer.traceability">Trazabilidad</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title" data-i18n="shared.footer.company">Empresa</div>
+            <ul class="footer-links">
+              <li><a href="about-the-team.html" data-i18n="shared.nav.aboutTeam">Sobre el equipo</a></li>
+              <li><a href="company.html" data-i18n="shared.nav.company">Empresa</a></li>
+              <li><a href="company.html#product-status" data-i18n="shared.footer.howWeSupport">Estado de implementación</a></li>
+              <li><a href="company.html#product-status" data-i18n="shared.footer.contact">Estado del producto</a></li>
+              <li><a href="faq.html" data-i18n="shared.nav.faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-col-title" data-i18n="shared.footer.resources">Recursos</div>
+            <ul class="footer-links">
+              <li><a href="pricing.html" data-i18n="shared.nav.pricing">Estado comercial</a></li>
+              <li><a href="login.html" data-i18n="shared.nav.login">Login</a></li>
+              <li><a href="platform.html#modules" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-social-block">
+          <div>
+            <div class="footer-col-title" data-i18n="shared.footer.direct">Accesos directos</div>
+            <p class="footer-direct-copy" data-i18n="shared.footer.directCopy">Consulta el alcance de producto, el estado comercial y las preguntas frecuentes.</p>
+          </div>
+          <div class="footer-social-row">
+            <a href="platform.html#modules" class="footer-social-link" aria-label="Ir al alcance de Nexa" data-i18n-aria-label="shared.footer.emailAria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 6h16v12H4z"></path>
+                <path d="M4 8l8 6 8-6"></path>
+              </svg>
+            </a>
+            <a href="company.html#product-status" class="footer-social-link" aria-label="Ir al estado de producto de Nexa" data-i18n-aria-label="shared.footer.contactAria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </a>
+            <a href="faq.html" class="footer-social-link" aria-label="Abrir el FAQ de Nexa" data-i18n-aria-label="shared.footer.faqAria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+            </a>
+            <a href="solutions/index.html" class="footer-social-link" aria-label="Ver soluciones de Nexa" data-i18n-aria-label="shared.footer.solutionsAria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-legal" data-i18n="shared.footer.legal">© 2026 Nexa. Información del producto en revisión.</span>
+      <div class="footer-legal-links">
+        <a href="legal/terms.html" data-i18n="shared.footer.terms">Terms &amp; Conditions</a>
+        <a href="legal/privacy.html" data-i18n="shared.footer.privacy">Privacy &amp; Policy</a>
+        <a href="legal/cookies.html" data-i18n="shared.footer.cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Banner de Cookies -->
+<div class="cookie-banner" id="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p class="cookie-banner-text" data-i18n="shared.cookies.bannerText">Nexa utiliza cookies para asegurar la mejor experiencia de navegación y rendimiento.</p>
+    <div class="cookie-banner-actions">
+      <a href="legal/cookies.html" class="cookie-banner-link" data-i18n="shared.cookies.bannerLearnMore">Aprender más</a>
+      <button type="button" class="btn btn-primary btn-sm cookie-banner-btn" id="cookie-accept-btn" data-i18n="shared.cookies.bannerAccept">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/js/i18n.js?v=20261002b"></script>
+<script src="../assets/js/interactions.js"></script>
+<script src="../assets/js/animations.js"></script>
+</body>
+</html>
