@@ -2,6 +2,10 @@
 
 This website is a static public description of Nexa. Content must preserve the distinction between accepted product scope, target technology, implementation evidence, acceptance, and production readiness.
 
+## Source import
+
+The first publication in this repository imported the existing website snapshot from [the original website repository](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) at [commit f9fb5a0d505152494034c60b3094e89e3f17f9a0](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website/commit/f9fb5a0d505152494034c60b3094e89e3f17f9a0). The original repository preserves the earlier development history and contributors. The initial import here records publication of an existing website; it does not represent original development of the entire site.
+
 ## Product scope
 
 The current Nexa Blueprint is the authority for product and domain decisions. Relevant sibling-repository sources include:
