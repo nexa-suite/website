@@ -1,8 +1,8 @@
 # Nexa Website
 
-Current release: `v1.0.0`.
+Current release: `v0.1.0`.
 
-[Repository](https://github.com/nexa-suite/website) · [Release notes](docs/releases/v1.0.0.md)
+[Repository](https://github.com/nexa-suite/website) · [Release notes](docs/releases/v0.1.0.md)
 
 Static bilingual website for communicating Nexa’s accepted B2B product scope and public status. The inherited visual design is retained. Product descriptions are informational and distinguish target scope from verified implementation.
 

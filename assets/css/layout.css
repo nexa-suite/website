@@ -248,7 +248,7 @@
 }
 
 /* Global safeguard: Hide all contact and trial references */
-a[href*="#contact"], 
+a[href*="#contact"],
 [data-i18n="shared.footer.contact"],
 [data-i18n="shared.footer.editorialPrimary"] {
   display: none !important;
