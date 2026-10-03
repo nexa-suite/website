@@ -1,8 +1,8 @@
 # Nexa Website
 
-Current release: `v0.1.0`.
+Current release: `v0.1.1`.
 
-[Repository](https://github.com/nexa-suite/website) · [Release notes](docs/releases/v0.1.0.md)
+[Repository](https://github.com/nexa-suite/website) · [Live site](https://nexa-suite.github.io/website/) · [Release notes](docs/releases/v0.1.1.md)
 
 Static bilingual website for communicating Nexa’s accepted B2B product scope and public status. The inherited visual design is retained. Product descriptions are informational and distinguish target scope from verified implementation.
 
@@ -18,7 +18,6 @@ Academic context: `1ACC0238 Aplicaciones para Dispositivos Móviles`, NRC `4949`
 - `pages/pricing.html` — commercial status; no public plans or prices.
 - `pages/faq.html` — product scope and public-information limits.
 - `pages/solutions/` — target-segment scope pages.
-
 - `pages/login.html` — access information until the real sign-in destination is provided.
 
 ## Run locally

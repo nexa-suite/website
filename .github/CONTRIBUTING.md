@@ -16,7 +16,7 @@ This repository contains a static bilingual website for Nexa. It describes produ
 
 - Preserve semantic HTML and the existing CSS structure.
 - Keep JavaScript small and page-focused.
-- Treat approved product decisions as authority for Nexa product scope.
+- Treat Blueprint as authority for Nexa product scope.
 - Distinguish product targets from implemented and accepted capabilities.
 - Do not add unverified application endpoints, pricing, SLA, or support claims.
 - Do not add external dependencies without project approval.

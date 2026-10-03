@@ -11,7 +11,9 @@
   <meta property="og:title" data-i18n-content="buyerPortal.meta.title" content="Nexa — Alcance del Buyer Portal" />
   <meta property="og:description" data-i18n-content="buyerPortal.meta.description" content="Dirección de producto para compradores autorizados vinculados a su proveedor Nexa actual. Implementación pública no verificada." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nexa-suite.github.io/website/pages/buyer-portal.html" />
   <meta property="og:site_name" content="Nexa" />
+  <link rel="canonical" href="https://nexa-suite.github.io/website/pages/buyer-portal.html" />
   <meta name="twitter:card" content="summary_large_image" />
   <title data-i18n-content="buyerPortal.meta.title">Nexa — Alcance del Buyer Portal</title>
   <link rel="icon" type="image/svg+xml" href="../assets/img/main-nexa-small-icon.svg" />
@@ -94,7 +96,7 @@
           <button class="lang-switch-btn is-active" type="button" data-lang-option="es">ES</button>
         </div>
         <a href="platform.html#modules" class="btn btn-primary btn-sm" id="nav-cta-mobile" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a>
-        <a href="login.html" class="btn btn-secondary btn-sm navbar-login-btn" data-i18n="shared.nav.login">Login</a>
+        <a href="platform.html#modules" class="btn btn-secondary btn-sm navbar-login-btn" data-i18n="shared.nav.login">Acceso</a>
       </div>
     </div>
 
@@ -170,9 +172,9 @@
       <div class="page-hero-copy page-hero-copy-left">
         <div class="badge mb-4" data-i18n="buyerPortal.hero.badge">Buyer Portal · objetivo V1</div>
         <h1 id="buyer-portal-headline" data-i18n-html="buyerPortal.hero.title">Una relación de compra entre tenant proveedor y comprador autorizado.</h1>
-        <p class="text-lead" data-i18n="buyerPortal.hero.lead">La definición de producto establece esta dirección para compradores autorizados de un tenant proveedor vigente. Esta página no afirma que exista acceso público o una instancia disponible.</p>
+        <p class="text-lead" data-i18n="buyerPortal.hero.lead">El Blueprint define esta dirección para compradores autorizados de un tenant proveedor vigente. Esta página no afirma que exista acceso público o una instancia disponible.</p>
         <div class="hero-cta-row">
-          <a href="login.html" class="btn btn-primary btn-lg" data-i18n="shared.nav.login">Login</a>
+          <a href="platform.html#modules" class="btn btn-primary btn-lg" data-i18n="shared.nav.login">Acceso</a>
           <a href="pricing.html#plans" class="btn btn-secondary btn-lg" data-i18n="home.hero.ctaSecondary">Sobre el producto</a>
         </div>
       </div>
@@ -231,7 +233,7 @@
           </svg>
         </div>
         <h3 data-i18n="buyerPortal.feature3.title" style="font-size: 16px; font-weight: 700; color: var(--c-text-primary); margin-bottom: var(--space-2);">Estado del pedido</h3>
-        <p data-i18n="buyerPortal.feature3.copy" style="font-size: 13px; color: var(--c-text-muted); line-height: 1.5;">Consulta de estados de pedido con acceso autorizado. Esta web no ofrece seguimiento de ubicación en vivo.</p>
+        <p data-i18n="buyerPortal.feature3.copy" style="font-size: 13px; color: var(--c-text-muted); line-height: 1.5;">El diseño contempla estados de pedido; seguimiento GPS en vivo no forma parte de V1.</p>
       </article>
 
       <article class="advantage-card" style="padding: var(--space-6); background: var(--c-white); border: 1px solid var(--c-border-light); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
@@ -261,21 +263,21 @@
     <div class="persona-cards reveal reveal-delay-1">
       <!-- Card Racional -->
       <article class="persona-card">
-        <span class="persona-badge racional" data-i18n="mobile.access.racional">Acceso</span>
+        <span class="persona-badge racional">Racional</span>
         <h3 class="persona-title" data-i18n="buyerPortal.personas.racional.title">Comprador autorizado</h3>
         <p class="persona-desc" data-i18n="buyerPortal.personas.racional.desc">Accede dentro de la relación con su proveedor; no tiene acceso a otros tenants.</p>
       </article>
 
       <!-- Card Emocional -->
       <article class="persona-card">
-        <span class="persona-badge emocional" data-i18n="mobile.access.emocional">Solicitud</span>
+        <span class="persona-badge emocional">Emocional</span>
         <h3 class="persona-title" data-i18n="buyerPortal.personas.emocional.title">Intención comercial</h3>
         <p class="persona-desc" data-i18n="buyerPortal.personas.emocional.desc">La solicitud se revisa antes de convertirse en un compromiso operativo.</p>
       </article>
 
       <!-- Card Recurrente / Indeciso -->
       <article class="persona-card">
-        <span class="persona-badge recurrente" data-i18n="mobile.access.recurrente">Disponibilidad</span>
+        <span class="persona-badge recurrente">Recurrente</span>
         <h3 class="persona-title" data-i18n="buyerPortal.personas.recurrente.title">Estado de producto</h3>
         <p class="persona-desc" data-i18n="buyerPortal.personas.recurrente.desc">La descripción de alcance no confirma implementación ni disponibilidad del portal.</p>
       </article>
@@ -327,7 +329,7 @@
             <div class="footer-col-title" data-i18n="shared.footer.resources">Recursos</div>
             <ul class="footer-links">
               <li><a href="pricing.html" data-i18n="shared.nav.pricing">Estado comercial</a></li>
-              <li><a href="login.html" data-i18n="shared.nav.login">Login</a></li>
+              <li><a href="platform.html#modules" data-i18n="shared.nav.login">Acceso</a></li>
               <li><a href="platform.html#modules" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a></li>
             </ul>
           </div>
@@ -388,7 +390,7 @@
   </div>
 </div>
 
-<script src="../assets/js/i18n.js?v=20261002b"></script>
+<script src="../assets/js/i18n.js"></script>
 <script src="../assets/js/interactions.js"></script>
 <script src="../assets/js/animations.js"></script>
 </body>

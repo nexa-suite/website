@@ -11,7 +11,9 @@
   <meta property="og:title" data-i18n-content="home.meta.ogTitle" content="Nexa — Alcance de producto para operaciones B2B" />
   <meta property="og:description" data-i18n-content="home.meta.ogDescription" content="Conoce el alcance aceptado de Nexa y distingue el diseño objetivo de las funciones implementadas." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nexa-suite.github.io/website/" />
   <meta property="og:site_name" content="Nexa" />
+  <link rel="canonical" href="https://nexa-suite.github.io/website/" />
   <meta name="twitter:card" content="summary_large_image" />
   <title data-i18n-content="home.meta.title">Nexa — Alcance de producto B2B</title>
   <link rel="icon" type="image/svg+xml" href="assets/img/main-nexa-small-icon.svg" />
@@ -94,7 +96,7 @@
           <button class="lang-switch-btn is-active" type="button" data-lang-option="es">ES</button>
         </div>
         <a href="pages/platform.html#modules" class="btn btn-primary btn-sm" id="nav-cta-mobile" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a>
-        <a href="pages/login.html" class="btn btn-secondary btn-sm navbar-login-btn" data-i18n="shared.nav.login">Login</a>
+        <a href="pages/platform.html#modules" class="btn btn-secondary btn-sm navbar-login-btn" data-i18n="shared.nav.login">Acceso</a>
       </div>
     </div>
 
@@ -104,7 +106,45 @@
         <button class="lang-switch-btn is-active" type="button" data-lang-option="es">ES</button>
       </div>
       <a href="pages/platform.html#modules" class="btn btn-primary btn-sm" id="nav-cta" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a>
-      <a href="pages/login.html" class="btn btn-secondary btn-sm navbar-login-btn" id="nav-login" data-i18n="shared.nav.login">Login</a>
+      <div class="dropdown-trigger" id="nav-login-trigger">
+        <button class="btn btn-secondary btn-sm navbar-login-btn dropdown-btn" type="button" id="nav-login"
+                aria-expanded="false" aria-controls="login-dropdown" aria-haspopup="true"
+                data-i18n="shared.nav.login">
+          Ingresar
+          <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="dropdown-panel dropdown-panel-right" id="login-dropdown" role="menu">
+          <a href="pages/platform.html#modules" class="dropdown-item" role="menuitem" id="nav-login-seller">
+            <div class="dropdown-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="dropdown-item-title" data-i18n="shared.nav.login.seller.title">Equipo operativo</div>
+              <div class="dropdown-item-desc" data-i18n="shared.nav.login.seller.desc">La disponibilidad de acceso público aún no está publicada.</div>
+            </div>
+          </a>
+          <a href="pages/platform.html#modules" class="dropdown-item" role="menuitem" id="nav-login-buyer">
+            <div class="dropdown-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="dropdown-item-title" data-i18n="shared.nav.login.buyer.title">Compradores autorizados</div>
+              <div class="dropdown-item-desc" data-i18n="shared.nav.login.buyer.desc">El acceso corresponde a una relación vigente con un proveedor Nexa.</div>
+            </div>
+          </a>
+        </div>
+      </div>
       <a href="pages/faq.html" class="navbar-link navbar-link-action" data-i18n="shared.nav.faq">FAQ</a>
     </div>
 
@@ -267,7 +307,7 @@
       <div class="app-fit-intro">
         <div class="badge mb-4" data-i18n="home.fit.badge">Enfoque operativo</div>
         <h2 class="app-fit-headline" data-i18n="home.fit.title">Diseñado para importadores, distribuidores y mayoristas.</h2>
-        <p class="app-fit-copy" data-i18n="home.fit.copy">El alcance prioriza operaciones B2B de productos refrigerados y sus transferencias comerciales y operativas.</p>
+        <p class="app-fit-copy" data-i18n="home.fit.copy">El alcance prioriza operaciones B2B de productos refrigerados y sus handoffs comerciales y operativos.</p>
       </div>
 
       <a href="pages/solutions/importers.html" class="app-fit-route" id="fit-importers">
@@ -333,21 +373,21 @@
     <div class="persona-cards reveal reveal-delay-1">
       <!-- Card Racional -->
       <article class="persona-card">
-        <span class="persona-badge racional" data-i18n="mobile.access.racional">Acceso</span>
+        <span class="persona-badge racional">Racional</span>
         <h3 class="persona-title" data-i18n="home.personas.racional.title">Buyer autorizado</h3>
         <p class="persona-desc" data-i18n="home.personas.racional.desc">Su acceso se limita a la relación comercial con el tenant proveedor actual.</p>
       </article>
 
       <!-- Card Emocional -->
       <article class="persona-card">
-        <span class="persona-badge emocional" data-i18n="mobile.access.emocional">Solicitud</span>
+        <span class="persona-badge emocional">Emocional</span>
         <h3 class="persona-title" data-i18n="home.personas.emocional.title">Solicitud de compra</h3>
         <p class="persona-desc" data-i18n="home.personas.emocional.desc">La intención de compra se revisa antes de convertirse en compromiso operativo.</p>
       </article>
 
       <!-- Card Recurrente / Indeciso -->
       <article class="persona-card">
-        <span class="persona-badge recurrente" data-i18n="mobile.access.recurrente">Disponibilidad</span>
+        <span class="persona-badge recurrente">Recurrente</span>
         <h3 class="persona-title" data-i18n="home.personas.recurrente.title">Estado del producto</h3>
         <p class="persona-desc" data-i18n="home.personas.recurrente.desc">El alcance no confirma que el portal esté implementado o disponible públicamente.</p>
       </article>
@@ -499,7 +539,7 @@
             </svg>
           </div>
           <h3 data-i18n="home.capabilities.temp.title">Registro de temperatura</h3>
-          <p data-i18n="home.capabilities.temp.copy">Captura manual de temperatura y gestión de evidencia térmica. Las integraciones IoT y la monitorización continua no se ofrecen como funciones disponibles.</p>
+          <p data-i18n="home.capabilities.temp.copy">V1 contempla captura manual por tenant y SKU. Seguimiento continuo, GPS e IoT están diferidos.</p>
           <div class="app-cap-cert">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -562,7 +602,7 @@
       <div class="app-product-copy">
         <div class="badge mb-4" data-i18n="home.product.badge">Sobre Nexa</div>
         <h2 id="product-headline" data-i18n="home.product.title">Un producto B2B con límites V1 explícitos.</h2>
-        <p data-i18n="home.product.copy">Nexa organiza solicitudes, inventario, despacho y documentos para importadores, distribuidores y mayoristas. Operations Mobile es el proyecto del curso 1ACC0238, Aplicaciones para Dispositivos Móviles, período 202620.</p>
+        <p data-i18n="home.product.copy">El alcance aceptado organiza solicitudes, inventario, despacho y documentos para importadores, distribuidores y mayoristas. Las páginas de equipo y producto quedan como placeholders.</p>
 
       </div>
 
@@ -654,8 +694,8 @@
             <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
           </svg>
         </div>
-        <h3 data-i18n="home.adopt.support.title">Disponibilidad de servicios</h3>
-        <p data-i18n="home.adopt.support.copy">Ubicación durante jornada, IoT, integraciones fiscales y servicios externos requieren implementación y validación específicas antes de ofrecerse públicamente.</p>
+        <h3 data-i18n="home.adopt.support.title">Integraciones fuera de V1</h3>
+        <p data-i18n="home.adopt.support.copy">IoT, GPS, integraciones fiscales y servicios externos requieren decisiones y evidencia posteriores.</p>
       </div>
 
     </div>
@@ -675,24 +715,24 @@
         <div class="app-cta-step">
           <span class="app-cta-step-num">1</span>
           <div>
-            <strong data-i18n="home.cta.step1.title">Conoce el producto</strong>
-            <span data-i18n="home.cta.step1.copy">Revisa el problema, los usuarios y el alcance de Operations Mobile.</span>
+            <strong data-i18n="home.cta.step1.title">Registra tu empresa</strong>
+            <span data-i18n="home.cta.step1.copy">Define los datos base de tu organizacion y workspace.</span>
           </div>
         </div>
         <div class="app-cta-step-arrow" aria-hidden="true">→</div>
         <div class="app-cta-step">
           <span class="app-cta-step-num">2</span>
           <div>
-            <strong data-i18n="home.cta.step2.title">Revisa los flujos</strong>
-            <span data-i18n="home.cta.step2.copy">Explora cómo se conectan almacén, despacho y entrega.</span>
+            <strong data-i18n="home.cta.step2.title">Configura tu operacion</strong>
+            <span data-i18n="home.cta.step2.copy">Organiza catalogo, equipo, almacenes y reglas desde el inicio.</span>
           </div>
         </div>
         <div class="app-cta-step-arrow" aria-hidden="true">→</div>
         <div class="app-cta-step">
           <span class="app-cta-step-num">3</span>
           <div>
-            <strong data-i18n="home.cta.step3.title">Consulta el estado</strong>
-            <span data-i18n="home.cta.step3.copy">Distingue el trabajo implementado, su validación y los siguientes pasos.</span>
+            <strong data-i18n="home.cta.step3.title">Empieza con trazabilidad</strong>
+            <span data-i18n="home.cta.step3.copy">Pedidos, inventario, despacho y Buyer Portal comparten el mismo flujo.</span>
           </div>
         </div>
       </div>
@@ -750,7 +790,7 @@
             <div class="footer-col-title" data-i18n="shared.footer.resources">Recursos</div>
             <ul class="footer-links">
               <li><a href="pages/pricing.html" data-i18n="shared.nav.pricing">Estado comercial</a></li>
-              <li><a href="pages/login.html" data-i18n="shared.nav.login">Login</a></li>
+              <li><a href="pages/platform.html#modules" data-i18n="shared.nav.login">Acceso</a></li>
               <li><a href="pages/platform.html#modules" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a></li>
             </ul>
           </div>
@@ -812,7 +852,7 @@
   </div>
 </div>
 
-<script src="assets/js/i18n.js?v=20261002b"></script>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/interactions.js"></script>
 <script src="assets/js/animations.js"></script>
 </body>
