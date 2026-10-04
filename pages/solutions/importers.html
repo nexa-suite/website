@@ -85,7 +85,7 @@
       </div>
 
       <a href="../company.html" class="navbar-link" id="nav-company" data-i18n="shared.nav.company">Empresa</a>
-      <a href="../pricing.html" class="navbar-link" id="nav-pricing" data-i18n="shared.nav.pricing">Estado comercial</a>
+      <a href="../pricing.html" class="navbar-link" id="nav-pricing" data-i18n="shared.nav.pricing">Precios</a>
       <a href="../faq.html" class="navbar-link navbar-link-mobile-only" id="nav-faq-mobile" data-i18n="shared.nav.faq">FAQ</a>
 
       <div class="navbar-mobile-actions">
@@ -128,7 +128,7 @@
       <div class="page-hero-copy page-hero-copy-left">
         <div class="page-hero-breadcrumb" data-i18n-html="importers.hero.breadcrumb"><a href="index.html">Soluciones</a><span class="page-hero-breadcrumb-sep">/</span><span class="page-hero-breadcrumb-current">Importadores y mayoristas</span></div>
 
-        <h1 id="importers-headline" data-i18n="importers.hero.title">Alcance de importación&lt;br&gt;y recepción de inventario.</h1>
+        <h1 id="importers-headline" data-i18n="importers.hero.title">Alcance de importación y recepción de inventario.</h1>
         <p class="text-lead" data-i18n="importers.hero.copy">Nexa contempla el registro de productos, lotes y ubicaciones. La lectura directa de contenedores y sensores no forma parte de V1.</p>
         <div class="hero-cta-row">
           <a href="../platform.html#modules" class="btn btn-primary btn-lg" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a>
@@ -147,15 +147,74 @@
   <div class="container-wide">
     <div class="reveal">
       <div class="badge badge-muted-dot mb-4" data-i18n="importers.problem.badge">El problema</div>
-      <h2 class="section-mini-headline" data-i18n="importers.problem.title">Problemas que el alcance busca ordenar</h2>
-      <p class="text-small" data-i18n="importers.problem.copy">Este contenido describe un segmento objetivo; no reporta un cliente, incidente o resultado real.</p>
+      <h2 class="section-mini-headline" data-i18n="importers.problem.title">Desafíos críticos en la importación de alimentos refrigerados</h2>
+      <p class="text-small" data-i18n="importers.problem.copy">La dispersión de datos entre manifiestos, recepción en bodega y compradores mayoristas genera sobrecostos operativos evitables.</p>
 
-      <div class="horizontal-pain-grid">
-        <div class="horizontal-pain-card" data-i18n-html="importers.problem.card1"><strong>Información fragmentada</strong><p>La recepción puede requerir coordinar datos entre equipos y sistemas.</p></div>
+      <div class="problem-cards-grid">
+        <article class="problem-card-enhanced">
+          <div>
+            <div class="problem-card-header">
+              <span class="problem-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </span>
+              <span class="problem-card-tag" data-i18n="importers.problem.c1.tag">Recepción en puerto</span>
+            </div>
+            <h3 class="problem-card-title" data-i18n="importers.problem.c1.title">Recepción desconectada</h3>
+            <p class="problem-card-copy" data-i18n="importers.problem.c1.copy">La llegada de contenedores y pallets genera demoras cuando los manifiestos no se sincronizan con las órdenes de compra y los depósitos.</p>
+          </div>
+          <div class="problem-card-impact" data-i18n-html="importers.problem.c1.impact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <span>Riesgo de sobreestadía y demoras en puerto</span>
+          </div>
+        </article>
 
-        <div class="horizontal-pain-card" data-i18n-html="importers.problem.card2"><strong>Identificación de lotes</strong><p>El producto define registros de lote para organizar inventario.</p></div>
+        <article class="problem-card-enhanced">
+          <div>
+            <div class="problem-card-header">
+              <span class="problem-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </span>
+              <span class="problem-card-tag" data-i18n="importers.problem.c2.tag">Control de vida útil</span>
+            </div>
+            <h3 class="problem-card-title" data-i18n="importers.problem.c2.title">Pérdida de trazabilidad por lote</h3>
+            <p class="problem-card-copy" data-i18n="importers.problem.c2.copy">Registrar manualmente fechas de caducidad y procedencia de productos perecibles eleva el riesgo de despachar lotes próximos a vencer.</p>
+          </div>
+          <div class="problem-card-impact" data-i18n-html="importers.problem.c2.impact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <span>Mermas prematuras y penalizaciones de clientes</span>
+          </div>
+        </article>
 
-        <div class="horizontal-pain-card" data-i18n-html="importers.problem.card3"><strong>Integraciones pendientes</strong><p>Telemetría directa y documentos de aduanas no se anuncian como funciones disponibles.</p></div>
+        <article class="problem-card-enhanced">
+          <div>
+            <div class="problem-card-header">
+              <span class="problem-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </span>
+              <span class="problem-card-tag" data-i18n="importers.problem.c3.tag">Handoffs B2B</span>
+            </div>
+            <h3 class="problem-card-title" data-i18n="importers.problem.c3.title">Discrepancias documentarias</h3>
+            <p class="problem-card-copy" data-i18n="importers.problem.c3.copy">La falta de un registro digital unificado entre bodega y comprador genera reclamos por diferencias en cantidades recibidas.</p>
+          </div>
+          <div class="problem-card-impact" data-i18n-html="importers.problem.c3.impact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <span>Disputas comerciales y retrasos en conciliación</span>
+          </div>
+        </article>
       </div>
 
     </div>
@@ -272,8 +331,6 @@
             <ul class="footer-links">
               <li><a href="../about-the-team.html" data-i18n="shared.nav.aboutTeam">Sobre el equipo</a></li>
               <li><a href="../company.html" data-i18n="shared.nav.company">Empresa</a></li>
-              <li><a href="../company.html#product-status" data-i18n="shared.footer.howWeSupport">Estado de implementación</a></li>
-              <li><a href="../company.html#product-status" data-i18n="shared.footer.contact">Estado del producto</a></li>
               <li><a href="../faq.html" data-i18n="shared.nav.faq">FAQ</a></li>
             </ul>
           </div>
@@ -281,7 +338,7 @@
           <div>
             <div class="footer-col-title" data-i18n="shared.footer.resources">Recursos</div>
             <ul class="footer-links">
-              <li><a href="../pricing.html" data-i18n="shared.nav.pricing">Estado comercial</a></li>
+              <li><a href="../pricing.html" data-i18n="shared.nav.pricing">Precios</a></li>
               <li><a href="../platform.html#modules" data-i18n="shared.nav.login">Acceso</a></li>
               <li><a href="../platform.html#modules" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a></li>
             </ul>
@@ -291,18 +348,13 @@
         <div class="footer-social-block">
           <div>
             <div class="footer-col-title" data-i18n="shared.footer.direct">Accesos directos</div>
-            <p class="footer-direct-copy" data-i18n="shared.footer.directCopy">Consulta el alcance de producto, el estado comercial y las preguntas frecuentes.</p>
+            <p class="footer-direct-copy" data-i18n="shared.footer.directCopy">Consulta el alcance de producto, los planes y las preguntas frecuentes.</p>
           </div>
           <div class="footer-social-row">
             <a href="../platform.html#modules" class="footer-social-link" aria-label="Ir al alcance de Nexa" data-i18n-aria-label="shared.footer.emailAria">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M4 6h16v12H4z"></path>
                 <path d="M4 8l8 6 8-6"></path>
-              </svg>
-            </a>
-            <a href="../company.html#product-status" class="footer-social-link" aria-label="Ir al estado de producto de Nexa" data-i18n-aria-label="shared.footer.contactAria">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
               </svg>
             </a>
             <a href="../faq.html" class="footer-social-link" aria-label="Abrir el FAQ de Nexa" data-i18n-aria-label="shared.footer.faqAria">
