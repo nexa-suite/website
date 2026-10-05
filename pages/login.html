@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, follow" />
   <meta name="theme-color" content="#2563EB" />
-  <meta name="description" data-i18n-content="login.meta" content="Estado del acceso web a Nexa Operations Mobile." />
+  <meta name="description" data-i18n-content="login.meta" content="Acceso seguro al espacio de trabajo corporativo de Nexa Suite." />
   <meta name="author" content="Nexa" />
-  <meta property="og:title" data-i18n-content="login.pageTitle" content="Nexa — Login" />
-  <meta property="og:description" data-i18n-content="login.meta" content="Estado del acceso web a Nexa Operations Mobile." />
+  <meta property="og:title" data-i18n-content="login.pageTitle" content="Nexa — Acceso Seguro" />
+  <meta property="og:description" data-i18n-content="login.meta" content="Acceso seguro al espacio de trabajo corporativo de Nexa Suite." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Nexa" />
-  <title data-i18n-content="login.pageTitle">Nexa — Login</title>
+  <title data-i18n-content="login.pageTitle">Nexa — Acceso Seguro</title>
   <link rel="icon" type="image/svg+xml" href="../assets/img/main-nexa-small-icon.svg" />
   <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
@@ -81,7 +81,7 @@
       </div>
 
       <a href="company.html" class="navbar-link" id="nav-company" data-i18n="shared.nav.company">Empresa</a>
-      <a href="pricing.html" class="navbar-link" id="nav-pricing" data-i18n="shared.nav.pricing">Estado comercial</a>
+      <a href="pricing.html" class="navbar-link" id="nav-pricing" data-i18n="shared.nav.pricing">Precios</a>
       <a href="faq.html" class="navbar-link navbar-link-mobile-only" id="nav-faq-mobile" data-i18n="shared.nav.faq">FAQ</a>
 
       <div class="navbar-mobile-actions">
@@ -122,26 +122,97 @@
   <div class="container-wide">
     <div class="hero-split-layout reveal">
       <div class="page-hero-copy page-hero-copy-left">
-        <div class="badge mb-4" data-i18n="login.badge">Login</div>
+        <div class="badge mb-4" data-i18n="login.badge">Portal de Acceso</div>
         <h1 id="login-title" data-i18n="login.title">Inicia sesión en Nexa</h1>
-        <p class="text-lead" data-i18n="login.copy">El acceso web se habilitará mediante el servicio de inicio de sesión de Nexa.</p>
+        <p class="text-lead" data-i18n="login.copy">Accede al entorno operativo de tu organización para gestión unificada de inventarios, despachos y cadena de frío.</p>
         <div class="hero-cta-row">
-          <a href="platform.html#modules" class="btn btn-primary btn-lg" data-i18n="placeholder.cta">Volver al alcance de producto</a>
+          <a href="platform.html#modules" class="btn btn-primary btn-lg" data-i18n="placeholder.cta">Explorar la plataforma</a>
           <a href="../index.html" class="btn btn-secondary btn-lg" data-i18n="shared.nav.home">Inicio</a>
         </div>
       </div>
-      <div class="hero-sidecard" aria-label="Estado de esta página">
-        <div class="hero-sidecard-kicker" data-i18n="mobile.academic">Proyecto académico de nexa-team</div>
-        <div class="hero-sidecard-title" data-i18n="mobile.status">Operations Mobile para Android</div>
+      <div class="hero-sidecard" aria-label="Seguridad y autenticación">
+        <div class="hero-sidecard-kicker" data-i18n="login.sidecard.kicker">Seguridad y Gobernanza</div>
+        <div class="hero-sidecard-title" data-i18n="login.sidecard.title">Autenticación Multi-Tenant Segura</div>
         <div class="hero-pill-grid">
-          <div class="page-hero-trust-pill" data-i18n="mobile.course">1ACC0238 · Aplicaciones para Dispositivos Móviles · NRC 4949 · Período 202620</div>
+          <div class="page-hero-trust-pill" data-i18n="login.sidecard.pill1">Cifrado TLS 1.3 de extremo a extremo</div>
+          <div class="page-hero-trust-pill" data-i18n="login.sidecard.pill2">Aislamiento estricto por organización</div>
+          <div class="page-hero-trust-pill" data-i18n="login.sidecard.pill3">Compatibilidad SSO corporativo (SAML 2.0)</div>
         </div>
       </div>
     </div>
   </div>
 </header>
 
-<main><section class="section section-tight"><div class="container-wide"><article class="module-card"><h2 data-i18n="login.status.title">Acceso web en preparación</h2><p data-i18n="login.status.copy">El enlace al servicio de inicio de sesión estará disponible cuando se publique su dirección. Por ahora puedes conocer Operations Mobile y el alcance del producto.</p><a href="about-the-product.html" class="btn btn-primary btn-lg" data-i18n="shared.nav.aboutProduct">Sobre el producto</a></article></div></section></main>
+<main>
+  <section class="section section-tight">
+    <div class="container-wide">
+      <div class="grid grid-2 reveal" style="gap: 28px; align-items: stretch;">
+        <article class="module-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="badge mb-3" data-i18n="login.form.badge">Workspace Web</div>
+            <h2 data-i18n="login.form.title">Ingresa a tu organización</h2>
+            <p data-i18n="login.form.copy" class="text-muted mb-4">Introduce el subdominio de tu espacio de trabajo o el correo de tu cuenta corporativa para continuar.</p>
+            <form onsubmit="event.preventDefault(); document.getElementById('login-feedback').style.display='block';">
+              <div class="form-group">
+                <label for="workspace-domain" class="form-label" data-i18n="login.form.domainLabel">Espacio de trabajo</label>
+                <div style="position: relative; display: flex; align-items: center;">
+                  <input type="text" id="workspace-domain" class="form-input" placeholder="tu-empresa" style="padding-right: 140px;" required />
+                  <span style="position: absolute; right: 14px; color: var(--c-text-muted); font-size: var(--text-sm); pointer-events: none; font-weight: 500;">.nexa-suite.com</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="login-email" class="form-label" data-i18n="login.form.emailLabel">Correo corporativo</label>
+                <input type="email" id="login-email" class="form-input" placeholder="nombre@tu-empresa.com" required />
+              </div>
+              <div id="login-feedback" style="display: none; padding: 12px; margin-bottom: 16px; border-radius: var(--radius-sm); background: rgba(37, 99, 235, 0.08); border: 1px solid rgba(37, 99, 235, 0.2); font-size: var(--text-sm); color: var(--c-primary);">
+                <strong data-i18n="login.form.feedbackTitle">Espacio de trabajo validado.</strong> <span data-i18n="login.form.feedbackCopy">Redirigiendo a tu proveedor de identidad corporativo (SSO)...</span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;" data-i18n="login.form.submitBtn">Continuar al Workspace</button>
+            </form>
+          </div>
+          <p style="margin-top: 20px; font-size: var(--text-xs); color: var(--c-text-muted);" data-i18n="login.form.ssoNote">Compatible con Microsoft Entra ID (Azure AD), Okta, Google Workspace y SAML 2.0.</p>
+        </article>
+
+        <article class="module-card" style="display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(241,245,249,0.95));">
+          <div>
+            <div class="badge mb-3" data-i18n="login.mobile.badge">Dispositivos de Almacén</div>
+            <h2 data-i18n="login.mobile.title">Nexa Operations Mobile</h2>
+            <p data-i18n="login.mobile.copy" class="text-muted mb-4">Aplicación nativa para terminales de mano y lectores de códigos de barras industriales en cámaras de frío y muelles.</p>
+            <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                <span style="color: var(--c-primary); font-weight: bold;">✓</span>
+                <span data-i18n="login.mobile.feat1">Soporte nativo para terminales Zebra, Honeywell y smartphones Android</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                <span style="color: var(--c-primary); font-weight: bold;">✓</span>
+                <span data-i18n="login.mobile.feat2">Modo offline con sincronización automática en recepción y picking</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                <span style="color: var(--c-primary); font-weight: bold;">✓</span>
+                <span data-i18n="login.mobile.feat3">Escaneo GS1-128, validación FEFO y control térmico en tiempo real</span>
+              </li>
+            </ul>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+            <a href="platform.html#modules" class="btn btn-primary btn-md" data-i18n="login.mobile.btnModules">Ver módulos operativos</a>
+            <a href="pricing.html" class="btn btn-secondary btn-md" data-i18n="login.mobile.btnPricing">Planes y suscripciones</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="reveal mt-5" style="margin-top: 32px; padding: 24px 32px; border-radius: var(--radius-lg); background: var(--c-surface); border: 1px solid var(--c-border); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+        <div>
+          <h3 style="margin: 0 0 6px 0; font-size: var(--text-lg);" data-i18n="login.help.title">¿Tu empresa aún no tiene cuenta en Nexa?</h3>
+          <p style="margin: 0; color: var(--c-text-muted); font-size: var(--text-sm);" data-i18n="login.help.copy">Conoce nuestros planes comerciales para mayoristas, importadores y operadores de frío, o agenda una demo guiada.</p>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <a href="pricing.html" class="btn btn-primary btn-md" data-i18n="login.help.btnPlans">Conocer Planes</a>
+          <a href="faq.html" class="btn btn-secondary btn-md" data-i18n="login.help.btnFaq">Preguntas Frecuentes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer class="footer" id="footer" role="contentinfo">
   <div class="container">
@@ -178,8 +249,6 @@
             <ul class="footer-links">
               <li><a href="about-the-team.html" data-i18n="shared.nav.aboutTeam">Sobre el equipo</a></li>
               <li><a href="company.html" data-i18n="shared.nav.company">Empresa</a></li>
-              <li><a href="company.html#product-status" data-i18n="shared.footer.howWeSupport">Estado de implementación</a></li>
-              <li><a href="company.html#product-status" data-i18n="shared.footer.contact">Estado del producto</a></li>
               <li><a href="faq.html" data-i18n="shared.nav.faq">FAQ</a></li>
             </ul>
           </div>
@@ -187,7 +256,7 @@
           <div>
             <div class="footer-col-title" data-i18n="shared.footer.resources">Recursos</div>
             <ul class="footer-links">
-              <li><a href="pricing.html" data-i18n="shared.nav.pricing">Estado comercial</a></li>
+              <li><a href="pricing.html" data-i18n="shared.nav.pricing">Precios</a></li>
               <li><a href="login.html" data-i18n="shared.nav.login">Login</a></li>
               <li><a href="platform.html#modules" data-i18n="shared.nav.registerWorkspace">Alcance del producto</a></li>
             </ul>
@@ -197,18 +266,13 @@
         <div class="footer-social-block">
           <div>
             <div class="footer-col-title" data-i18n="shared.footer.direct">Accesos directos</div>
-            <p class="footer-direct-copy" data-i18n="shared.footer.directCopy">Consulta el alcance de producto, el estado comercial y las preguntas frecuentes.</p>
+            <p class="footer-direct-copy" data-i18n="shared.footer.directCopy">Consulta el alcance de producto, los planes y las preguntas frecuentes.</p>
           </div>
           <div class="footer-social-row">
             <a href="platform.html#modules" class="footer-social-link" aria-label="Ir al alcance de Nexa" data-i18n-aria-label="shared.footer.emailAria">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M4 6h16v12H4z"></path>
                 <path d="M4 8l8 6 8-6"></path>
-              </svg>
-            </a>
-            <a href="company.html#product-status" class="footer-social-link" aria-label="Ir al estado de producto de Nexa" data-i18n-aria-label="shared.footer.contactAria">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
               </svg>
             </a>
             <a href="faq.html" class="footer-social-link" aria-label="Abrir el FAQ de Nexa" data-i18n-aria-label="shared.footer.faqAria">

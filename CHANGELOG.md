@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.0 — 2026-10-05
+
+- Establish the stable release of the bilingual static Nexa Website.
+- Include the existing UX corrections, legal sections and commercial presentation from the current main revision.
+- Preserve content provenance, public product-status boundaries and informational access guidance.
+- Keep transactional application access and service-backed contact intake outside this static release boundary.
+
 ## v0.1.1 — 2026-10-03
 
 - Align bilingual public copy with accepted Nexa scope and current product status.
