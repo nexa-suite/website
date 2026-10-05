@@ -26,9 +26,9 @@ strictly distinguish target scope from verified implementation.
 Academic context: `1ACC0238 Aplicaciones para Dispositivos Móviles`, NRC `4949`,
 period `202620`. Course and team data are sourced from current project materials.
 
-The [v0.1.1 release boundary](./docs/releases/v0.1.1.md) establishes the current
-public site baseline. Publication is verified by the signed `v0.1.1` tag and
-[GitHub Release](https://github.com/nexa-suite/website/releases/tag/v0.1.1).
+The [v1.0.0 release boundary](./docs/releases/v1.0.0.md) establishes the current
+public site baseline. The versioned release notes define this static-site boundary. Published tags and
+GitHub Releases remain available in the repository release register.
 
 ## Nexa Product Ecosystem
 
