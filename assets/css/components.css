@@ -7158,6 +7158,7 @@ body[data-page="home"] .navbar {
 }
 
 body[data-page="home"] .navbar:not(.scrolled) {
+  top: clamp(6px, 0.8vw, 12px);
   background: transparent;
   border-bottom-color: transparent;
   backdrop-filter: none;
@@ -7189,7 +7190,7 @@ body[data-page="home"] .navbar:not(.scrolled) .navbar-mobile-toggle[aria-expande
 
 body[data-page="home"] .app-hero {
   min-height: max(calc(640px + var(--home-navbar-height)), 100svh);
-  padding-top: var(--home-navbar-height);
+  padding-top: calc(var(--home-navbar-height) + clamp(12px, 2.3vw, 36px));
 }
 
 body[data-page="home"] .app-hero-gradient {
@@ -7214,6 +7215,7 @@ body[data-page="home"] .app-hero-content {
   display: grid;
   gap: clamp(18px, 2.4vw, 28px);
   max-width: min(680px, 100%);
+  margin-inline-start: clamp(24px, 7vw, 108px);
   padding: clamp(48px, 7vw, 84px) 0 clamp(36px, 4vw, 52px);
 }
 
@@ -7588,6 +7590,7 @@ body[data-page="home"] .app-cta-buttons .btn {
 
   body[data-page="home"] .app-hero-content {
     max-width: 100%;
+    margin-inline-start: 0;
     padding: 32px 0 28px;
     gap: 16px;
   }
