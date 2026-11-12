@@ -7155,6 +7155,24 @@ body[data-page="home"] .app-hero {
   min-height: max(640px, calc(100svh - 64px));
 }
 
+body[data-page="home"] .app-hero-gradient {
+  background: linear-gradient(90deg, rgb(7 18 31 / 84%), rgb(7 18 31 / 63%));
+}
+
+body[data-page="home"] .app-hero-headline,
+body[data-page="home"] .app-hero-stat-value {
+  color: #fff;
+}
+
+body[data-page="home"] .app-hero-lead,
+body[data-page="home"] .app-hero-stat-label {
+  color: #f1f5f9;
+}
+
+body[data-page="home"] .app-hero-stats {
+  border-color: rgb(255 255 255 / 28%);
+}
+
 body[data-page="home"] .app-hero-content {
   display: grid;
   gap: clamp(18px, 2.4vw, 28px);
