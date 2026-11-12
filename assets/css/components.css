@@ -7194,7 +7194,12 @@ body[data-page="home"] .app-hero-stat {
 }
 
 body[data-page="home"] .app-hero-stat-label {
-  max-width: 16ch;
+  max-width: none;
+}
+
+body[data-page="home"] .app-hero-stat-value {
+  font-size: clamp(20px, 2vw, 24px);
+  overflow-wrap: anywhere;
 }
 
 body[data-page="home"] .app-fit-grid {
