@@ -66,11 +66,11 @@ Object.assign(TRANSLATIONS.es, {
 
 Object.assign(TRANSLATIONS.es, {
   "home.meta.description": "Nexa acerca información de catálogo, precios e inventario a compradores y equipos de almacén B2B.",
-  "home.meta.ogTitle": "Nexa — Tu inventario claro. Tus compras mejor informadas.",
+  "home.meta.ogTitle": "Nexa — Compras mejor informadas. Inventario a la vista.",
   "home.meta.ogDescription": "Catálogo, precios e inventario para compradores y equipos de almacén B2B.",
-  "home.meta.title": "Nexa — Tu inventario claro. Tus compras mejor informadas.",
-  "home.hero.title": "Tu inventario claro.<br>Tus compras mejor informadas.",
-  "home.hero.lead": "Para importadores, distribuidores y mayoristas: catálogo, precios y disponibilidad para sus compradores; lotes y preparación para su equipo de almacén.",
+  "home.meta.title": "Nexa — Compras mejor informadas. Inventario a la vista.",
+  "home.hero.title": "Compras mejor informadas.<br>Inventario a la vista.",
+  "home.hero.lead": "Catálogo e inventario B2B para importadores, distribuidores y mayoristas.",
   "home.hero.ctaPrimary": "Para compradores",
   "home.hero.ctaSecondary": "Para tu almacén",
   "home.hero.stat1Value": "Buyer Mobile",
@@ -615,7 +615,8 @@ Object.assign(TRANSLATIONS.es, {
   // Pricing page translations (Spanish)
   "company.team.badge": "Perfiles del equipo",
   "company.team.title": "Áreas de contribución",
-  "company.team.copy": "Nombres y áreas tomados del perfil del equipo en Mobile Report; no son títulos laborales.",
+  "company.team.video": "About the Team · Próximamente",
+  "company.team.copy": "El equipo que construye Nexa.",
   "company.team.diego.name": "Diego Sebastián Yucra Sandoval",
   "company.team.joaquin.name": "Joaquín Francisco Verde Bueno",
   "company.team.gino.name": "Gino Rodrigo Torrejón de los Santos",
@@ -688,11 +689,11 @@ Object.assign(TRANSLATIONS.en, {
 
 Object.assign(TRANSLATIONS.en, {
   "home.meta.description": "Nexa brings catalog, pricing, and inventory information to B2B buyers and warehouse teams.",
-  "home.meta.ogTitle": "Nexa — Clear inventory. Better-informed buying.",
+  "home.meta.ogTitle": "Nexa — Better buying decisions. Inventory in view.",
   "home.meta.ogDescription": "Catalog, prices, and inventory for B2B buyers and warehouse teams.",
-  "home.meta.title": "Nexa — Clear inventory. Better-informed buying.",
-  "home.hero.title": "Clear inventory.<br>Better-informed buying.",
-  "home.hero.lead": "For importers, distributors, and wholesalers: catalog, prices, and availability for their buyers; lots and preparation for their warehouse teams.",
+  "home.meta.title": "Nexa — Better buying decisions. Inventory in view.",
+  "home.hero.title": "Better buying decisions.<br>Inventory in view.",
+  "home.hero.lead": "B2B catalog and inventory for importers, distributors, and wholesalers.",
   "home.hero.ctaPrimary": "For buyers",
   "home.hero.ctaSecondary": "For your warehouse",
   "home.hero.stat1Value": "Buyer Mobile",
@@ -1238,7 +1239,8 @@ Object.assign(TRANSLATIONS.en, {
   // Pricing page translations (English)
   "company.team.badge": "Team profiles",
   "company.team.title": "Areas of contribution",
-  "company.team.copy": "Names and areas sourced from Mobile Report profiles; these are not job titles.",
+  "company.team.video": "About the Team · Coming soon",
+  "company.team.copy": "The team building Nexa.",
   "company.team.diego.name": "Diego Sebastián Yucra Sandoval",
   "company.team.joaquin.name": "Joaquín Francisco Verde Bueno",
   "company.team.gino.name": "Gino Rodrigo Torrejón de los Santos",
