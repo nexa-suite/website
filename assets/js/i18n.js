@@ -615,7 +615,7 @@ Object.assign(TRANSLATIONS.es, {
   // Pricing page translations (Spanish)
   "company.team.badge": "Perfiles del equipo",
   "company.team.title": "Áreas de contribución",
-  "company.team.video": "About the Team · Próximamente",
+  "company.team.videoLink": "Ver en YouTube",
   "company.team.copy": "El equipo que construye Nexa.",
   "company.team.diego.name": "Diego Sebastián Yucra Sandoval",
   "company.team.joaquin.name": "Joaquín Francisco Verde Bueno",
@@ -1239,7 +1239,7 @@ Object.assign(TRANSLATIONS.en, {
   // Pricing page translations (English)
   "company.team.badge": "Team profiles",
   "company.team.title": "Areas of contribution",
-  "company.team.video": "About the Team · Coming soon",
+  "company.team.videoLink": "Watch on YouTube",
   "company.team.copy": "The team building Nexa.",
   "company.team.diego.name": "Diego Sebastián Yucra Sandoval",
   "company.team.joaquin.name": "Joaquín Francisco Verde Bueno",

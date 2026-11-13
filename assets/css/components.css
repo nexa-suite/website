@@ -8323,6 +8323,11 @@ body[data-page^="legal"] {
   padding: 90px 0;
   background-color: var(--c-white);
   border-top: 1px solid var(--c-border);
+  text-align: center;
+}
+
+.team-video-link {
+  margin-top: 16px;
 }
 
 .video-player-wrapper {
