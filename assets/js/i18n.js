@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'nexa-lang';
-const DEFAULT_LANG = 'es';
+const DEFAULT_LANG = 'en';
 const TRANSLATIONS = { es: {}, en: {} };
 
 Object.assign(TRANSLATIONS.es, {
@@ -1333,6 +1333,8 @@ Object.assign(TRANSLATIONS.es, {
   "placeholder.product.title": "Información del producto",
   "placeholder.product.copy": "Esta página queda pendiente de publicar una descripción aprobada. Consulta el alcance V1 disponible en la plataforma.",
   "placeholder.product.meta": "La página final está pendiente de revisión.",
+  "placeholder.product.videoTitle": "Video sobre el producto",
+  "placeholder.product.videoStatus": "El video del producto aún no está publicado.",
   "placeholder.notice.title": "Contenido en revisión",
   "placeholder.notice.copy": "Esta sección aún no está publicada. No representa una funcionalidad disponible.",
   "placeholder.cta": "Volver al alcance de producto"
@@ -1422,6 +1424,8 @@ Object.assign(TRANSLATIONS.en, {
   "placeholder.product.title": "Product information",
   "placeholder.product.copy": "This page remains unpublished until an approved product description is ready. See the available V1 scope on the platform page.",
   "placeholder.product.meta": "The final page is pending review.",
+  "placeholder.product.videoTitle": "About the Product video",
+  "placeholder.product.videoStatus": "The product video has not been published yet.",
   "placeholder.notice.title": "Content under review",
   "placeholder.notice.copy": "This section has not been published. It does not represent an available function.",
   "placeholder.cta": "Back to product scope"

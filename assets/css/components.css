@@ -8341,6 +8341,14 @@ body[data-page^="legal"] {
   aspect-ratio: 16 / 9;
 }
 
+.product-video-placeholder {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  color: var(--c-text-secondary);
+  text-align: center;
+}
+
 .section-dark-team-video .video-player-wrapper {
   border: 1px solid var(--c-border);
 }
